@@ -1,0 +1,134 @@
+<div class="Tab-bas">
+  <div class="section-header">
+    <div class="media-content index-1">“The latest fashion brand for all women with an irrepressible passion for fashion.”</div>
+    <div class="media-content index-2">“Whether you are a boss, a freelance, a sporty girl or a beach buff, Onsideshe is probably the most fashionable lifestyle brand in the world.”</div>
+    <div class="media-content index-3">
+      “No matter what fashion personality a woman has, Onsideshe has a dreamy and distinctive design that will suit any preference.”</div>
+    <div class="media-content index-4">
+      “Onsideshe is here to become the leading lady of the future as they help women find the distinctive style that makes them feel comfortable and represented.”</div>
+  </div>
+  <div class="logo-bar">
+    <div class="logo-bar__item" set="index-1">
+      <img class="logo__img" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/1_medium_medium_6718b13a-f51e-4a5d-b772-df17272acdbf.avif?v=1692365036">
+      <div class="press_dots"></div>
+    </div>
+    <div class="logo-bar__item" set="index-2">
+      <img class="logo__img" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/2_medium_0f3ffc8c-5bcc-410d-8985-91f86dc226d0_medium.avif?v=1692365036">
+      <div class="press_dots"></div>
+    </div>
+    <div class="logo-bar__item" set="index-3">
+      <img class="logo__img" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/3_medium_fff32890-060d-47ab-8a70-e659099cb2bc_medium.avif?v=1692365037">
+      <div class="press_dots"></div>
+    </div>
+    <div class="logo-bar__item" set="index-4">
+      <img class="logo__img" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/4_medium_894508ca-a046-4e33-bf4e-bdb0a1cf7a04_medium.avif?v=1692365036">
+      <div class="press_dots"></div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "onside",
+    "settings": [],
+    "presets": [
+      {
+        "name": "onside"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .Tab-bas {
+    margin: 3% 2% 5%;
+    background: #faf7f2;
+  }
+  .media-content {
+    display: none;
+    font-size: 30px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 110px;
+  }
+  .logo-bar {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: nowrap;
+  }
+  .logo-bar__item img {
+    width: 80%;
+
+  }
+  .press_dots {
+    display: block !important;
+    content: " ";
+    width: 0;
+    height: 6px;
+    background: #1ea0f0;
+    margin: 0 auto;
+    transition: all 0.2s;
+  }
+  .press_dots_cls {
+    display: none;
+  }
+  .abc {
+    width: 30%;
+  }
+  @media only screen and (max-width: 768px) {
+    .media-content {
+      width: 100%;
+      font-size: 25px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .logo-bar {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .media-content {
+      font-size: 20px;
+    }
+    .logo-bar__item {
+      width: 50%;
+    }
+  }
+</style>
+
+<script>
+  var logo_btn = document.querySelectorAll(".logo-bar__item");
+  var co = document.querySelectorAll(".press_dots");
+  var text = document.querySelectorAll(".media-content");
+
+
+  logo_btn.forEach((img_btn) => {
+    img_btn.addEventListener('click', function(index) {
+      co
+        .forEach((co_btn) => {
+          co_btn.classList.remove("abc");
+        })
+        text
+        .forEach((txt_btn) => {
+          txt_btn.style.display = "none";
+        })
+        img_btn
+        .querySelector(".press_dots")
+        .classList
+        .add("abc");
+      var img_attr = img_btn.getAttribute("set");
+      console.log(img_attr);
+      document.querySelector('.' + img_attr).style.display = "block";
+
+    });
+
+  });
+
+// console.log(co.length);
+  window.addEventListener('DOMContentLoaded', function() {
+    const img_btns = document.querySelectorAll(".logo-bar__item");
+    img_btns[0].click();
+  });
+</script>
