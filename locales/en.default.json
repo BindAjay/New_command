@@ -299,16 +299,16 @@
       "payment": "Payment methods"
     },
     "featured_blog": {
-      "view_all": "View all kkkkkk",
+      "view_all": "View all",
       "onboarding_title": "Blog post",
       "onboarding_content": "Give your customers a summary of your blog post"
     },
     "featured_collection": {
-      "view_all": "View all  jjjjjj",
+      "view_all": "View all",
       "view_all_label": "View all products in the {{ collection_name }} collection"
     },
     "collection_list": {
-      "view_all": "View all   lllllll"
+      "view_all": "View all"
     },
     "collection_template": {
       "empty": "No products found",
