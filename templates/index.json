@@ -196,6 +196,26 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "97071f3e-5b21-4383-977b-9254ff1f5129": {
+      "type": "AMBASSADORS",
+      "blocks": {
+        "79b39b9d-46bf-40b5-b861-3dee1bf63124": {
+          "type": "gallery",
+          "settings": {
+            "name": "",
+            "profile": ""
+          }
+        }
+      },
+      "block_order": [
+        "79b39b9d-46bf-40b5-b861-3dee1bf63124"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_txt": "",
+        "sub_txt": ""
+      }
     }
   },
   "order": [
@@ -204,6 +224,7 @@
     "featured_collection",
     "fc7b88dc-ad18-40b0-9d1d-026816bbd2cb",
     "ae00ebd4-13ba-47bc-aac7-00096dde7c55",
-    "cbc2274c-1eae-497c-b4f2-817d38957df7"
+    "cbc2274c-1eae-497c-b4f2-817d38957df7",
+    "97071f3e-5b21-4383-977b-9254ff1f5129"
   ]
 }
