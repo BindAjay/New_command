@@ -1,3 +1,15 @@
+sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom{
+  background-color: pink;
+}
+.section-header.shopify-section-group-header-group {
+  z-index: 3;
+  position: sticky;
+  top: 0;
+}
+.text-center1{
+text-align: center;
+margin-top: 3% !important;
+}
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -2347,6 +2359,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading-link .h2 {
   line-height: 1;
+  font-size: 30px;
+  font-weight: bold;
   color: rgba(var(--color-foreground), 0.75);
 }
 

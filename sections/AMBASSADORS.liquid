@@ -1,0 +1,73 @@
+<!-- Sections -> ambassadors -->
+<div class="ambassadors page-width">
+  <p class="heading">{{ section.settings.main_txt }}</p>
+  <h2 class="sub-heading">{{ section.settings.sub_txt }}</h2>
+
+  <div class="ambassadors-gallery">
+    {% for block in section.blocks %}
+      <div class="both-img">
+        <div class="first-img">
+          {% if block.settings.first_img != blank %}
+            <img src="{{ block.settings.first_img | img_url: 'master' }}" alt="First Image" />
+          {% endif %}
+        </div>
+        <div class="second-img">
+          {% if block.settings.second_img != blank %}
+            <img src="{{ block.settings.second_img | img_url: 'master' }}" alt="Second Image" />
+          {% endif %}
+        </div>
+        <div class="details">
+          <h3>{{ block.settings.name }}</h3>
+          <p>{{ block.settings.profile }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Ambassadors",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_txt",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "sub_txt",
+        "label": "Sub-Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Ambassadors Gallery",
+        "type": "gallery",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "first_img",
+            "label": "First Image"
+          }, {
+            "type": "image_picker",
+            "id": "second_img",
+            "label": "Second Image"
+          }, {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }, {
+            "type": "text",
+            "id": "profile",
+            "label": "Profile"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Ambassadors Section"
+      }
+    ]
+  }
+{% endschema %}
