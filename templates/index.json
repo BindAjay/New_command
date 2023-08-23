@@ -203,18 +203,39 @@
         "79b39b9d-46bf-40b5-b861-3dee1bf63124": {
           "type": "gallery",
           "settings": {
+            "first_img": "shopify:\/\/shop_images\/4_6c779eb6-80aa-4e4c-a5d7-5bb80486a0bb.jpg",
+            "second_img": "shopify:\/\/shop_images\/5_2b616a53-e778-4019-bd68-9e2e601688b3.jpg",
+            "name": "",
+            "profile": ""
+          }
+        },
+        "c0e856ee-3d87-42b3-9a24-2b5a8c0c74e8": {
+          "type": "gallery",
+          "settings": {
+            "first_img": "shopify:\/\/shop_images\/3_bc4f2f27-4668-4de1-b7b2-fc49ecbaa794.jpg",
+            "second_img": "shopify:\/\/shop_images\/2_51db04f8-1b0a-401b-a160-1e5030511dfe_1.jpg",
+            "name": "",
+            "profile": ""
+          }
+        },
+        "2153b930-f1b5-4e48-a70f-aa8062cafb08": {
+          "type": "gallery",
+          "settings": {
+            "first_img": "shopify:\/\/shop_images\/6_85e6ac4c-833f-4876-8989-b848876d5b55.jpg",
+            "second_img": "shopify:\/\/shop_images\/1_e2c7611f-949f-4c63-88ce-1cb48466e064.jpg",
             "name": "",
             "profile": ""
           }
         }
       },
       "block_order": [
-        "79b39b9d-46bf-40b5-b861-3dee1bf63124"
+        "79b39b9d-46bf-40b5-b861-3dee1bf63124",
+        "c0e856ee-3d87-42b3-9a24-2b5a8c0c74e8",
+        "2153b930-f1b5-4e48-a70f-aa8062cafb08"
       ],
-      "disabled": true,
       "settings": {
-        "main_txt": "",
-        "sub_txt": ""
+        "main_txt": "Used By The Best",
+        "sub_txt": "ONSIDESHE AMBASSADORS"
       }
     }
   },
