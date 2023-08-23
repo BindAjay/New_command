@@ -203,6 +203,8 @@
         "79b39b9d-46bf-40b5-b861-3dee1bf63124": {
           "type": "gallery",
           "settings": {
+            "first_img": "shopify:\/\/shop_images\/4_6c779eb6-80aa-4e4c-a5d7-5bb80486a0bb.jpg",
+            "second_img": "shopify:\/\/shop_images\/5_2b616a53-e778-4019-bd68-9e2e601688b3.jpg",
             "name": "",
             "profile": ""
           }
@@ -211,10 +213,9 @@
       "block_order": [
         "79b39b9d-46bf-40b5-b861-3dee1bf63124"
       ],
-      "disabled": true,
       "settings": {
-        "main_txt": "",
-        "sub_txt": ""
+        "main_txt": "Used By The Best",
+        "sub_txt": "ONSIDESHE AMBASSADORS"
       }
     }
   },
