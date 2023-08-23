@@ -81,4 +81,54 @@
     margin: 0;
     line-height: 1.2;
   }
+  .ambassadors-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 10px;
+  }
+  .both-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:30%;
+  }
+  .both-img .first-img img {
+    width: 100%
+  }
+  .both-img .second-img {
+    display: none;
+  }
+  .details {
+    position: absolute;
+    bottom: 7px;
+    z-index: 1;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    color: #fff;
+    line-height: 1.2;
+    padding: 5px 10px;
+  }
 </style>
+
+<script>
+  var imgbtn = document.querySelectorAll(".both-img");
+
+// var ft_img = document.querySelectorAll('.first-img');
+  imgbtn.forEach((btn1) => {
+    var i = 0;
+    btn1.addEventListener('mouseover', () => {
+      btn1.querySelector('.first-img').style.display = "none";
+      btn1.querySelector('.second-img').style.display = "block";
+    });
+  });
+
+  imgbtn.forEach((btn2) => {
+    var i = 0;
+    btn2.addEventListener('mouseout', () => {
+      btn2.querySelector('.first-img').style.display = "block";
+      btn2.querySelector('.second-img').style.display = "none";
+    });
+  });
+</script>
