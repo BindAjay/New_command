@@ -74,7 +74,7 @@
 
 <style>
   .ambassadors {
-    margin-top: 4%; 
+    margin-top: 4%;
   }
   .ambassadors .heading,
   .ambassadors .sub-heading {
@@ -84,22 +84,21 @@
     margin: 0;
     line-height: 1.2;
   }
+  .ambassadors-gallery .both-img {}
   .ambassadors-gallery {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     margin: 20px 10px;
+   
   }
   .both-img {
     display: flex;
     justify-content: center;
     position: relative;
-    /*width:30%;*/
+   width:30%;
   }
-  .both-img .first-img img {
-    ;
-    /*width: 100%*/
-  }
+  
   .both-img .second-img {
     display: none;
   }
@@ -113,6 +112,12 @@
     color: #fff;
     line-height: 1.2;
     padding: 5px 10px;
+  }
+
+  @media screen and (max-width: 768px){
+    .both-img .first-img img {
+      width: 100%;
+    }
   }
 </style>
 
