@@ -19,11 +19,19 @@
             "image_width": 195,
             "alignment": ""
           }
+        },
+        "3d821b58-8ada-4e38-af27-e149c7a42ada": {
+          "type": "link_list",
+          "settings": {
+            "heading": "WHAT YOU SHOULD READ",
+            "menu": "footer-2"
+          }
         }
       },
       "block_order": [
         "ad3bed74-6d26-492b-913c-4ed2574741d4",
-        "a63540ff-1e00-47eb-9712-a172d6dcdd4f"
+        "a63540ff-1e00-47eb-9712-a172d6dcdd4f",
+        "3d821b58-8ada-4e38-af27-e149c7a42ada"
       ],
       "settings": {
         "color_scheme": "background-1",
