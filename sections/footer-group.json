@@ -11,10 +11,19 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "a63540ff-1e00-47eb-9712-a172d6dcdd4f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/four_payment_icons.png",
+            "image_width": 195,
+            "alignment": ""
+          }
         }
       },
       "block_order": [
-        "ad3bed74-6d26-492b-913c-4ed2574741d4"
+        "ad3bed74-6d26-492b-913c-4ed2574741d4",
+        "a63540ff-1e00-47eb-9712-a172d6dcdd4f"
       ],
       "settings": {
         "color_scheme": "background-1",
