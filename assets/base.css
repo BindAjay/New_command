@@ -1,5 +1,22 @@
+.view_details1{
+  margin-top: -20%;
+  margin-left: 5%;
+  z-index: 9;
+  border: none;
+  padding: 5%;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  width: 90%;
+}
 sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom{
   background-color: pink;
+}
+@media screen and (max-width:768){
+  .footer-block.grid__item.scroll-trigger.animate--slide-in:nth-child(1){
+    width:100%;
+    text-align: center;
+  }
 }
 .section-header.shopify-section-group-header-group {
   z-index: 3;

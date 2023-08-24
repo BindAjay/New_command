@@ -97,6 +97,7 @@
              show_rating: section.settings.show_rating,
              show_quick_add: section.settings.enable_quick_add,
              section_id: section.id %}
+              
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
@@ -258,7 +259,12 @@
         "type": "text",
         "id": "view_text",
         "label": "View Text"
-      }, {
+      },{
+        "type": "checkbox",
+        "id":"Show_view_details",
+        "default": true,
+        "label": "Show view details button"
+      },{
         "type": "select",
         "id": "view_all_style",
         "label": "t:sections.featured-collection.settings.view_all_style.label",

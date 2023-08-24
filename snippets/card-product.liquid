@@ -138,6 +138,9 @@
           </div>
         </div>
       </div>
+      {% if section.settings.Show_view_details == true%}
+      <button class="view_details1">View Details</button>
+      {% endif %}
       <div class="card__content">
         <div class="card__information">
           <h3
@@ -198,7 +201,6 @@
                 </span>
               </p>
             {%- endif -%}
-
             {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>

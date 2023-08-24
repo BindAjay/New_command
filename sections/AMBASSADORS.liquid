@@ -84,7 +84,6 @@
     margin: 0;
     line-height: 1.2;
   }
-  .ambassadors-gallery .both-img {}
   .ambassadors-gallery {
     display: flex;
     justify-content: space-between;
@@ -96,16 +95,23 @@
     display: flex;
     justify-content: center;
     position: relative;
-    width: 30%;
+   width: 25%;
   }
 
   .both-img .second-img {
     display: none;
+    width:100%;
+    
+  }
+  .both-img .first-img{
     width: 100%;
   }
-  .both-img .first-img {
-    width: 100%;
+  .both-img .first-img img {
+   width: 100%;
   }
+  .both-img .second-img img {
+    width: 100% !important;
+}
   .details {
     position: absolute;
     bottom: 7px;
@@ -121,6 +127,15 @@
   @media screen and (max-width: 768px) {
     .both-img .first-img img {
       width: 100%;
+    }
+    .both-img .second-img img{
+      width:100%;
+    }
+    .both-img{
+      width:33%;
+    }
+    .both-img .details p{
+      font-size: 12px;
     }
   }
   @media screen and (max-width: 450px) {
