@@ -5,19 +5,19 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "ad3bed74-6d26-492b-913c-4ed2574741d4": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
         "a63540ff-1e00-47eb-9712-a172d6dcdd4f": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/four_payment_icons.png",
             "image_width": 195,
             "alignment": ""
+          }
+        },
+        "ad3bed74-6d26-492b-913c-4ed2574741d4": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SERVICE CENTER",
+            "menu": "footer"
           }
         },
         "3d821b58-8ada-4e38-af27-e149c7a42ada": {
@@ -29,8 +29,8 @@
         }
       },
       "block_order": [
-        "ad3bed74-6d26-492b-913c-4ed2574741d4",
         "a63540ff-1e00-47eb-9712-a172d6dcdd4f",
+        "ad3bed74-6d26-492b-913c-4ed2574741d4",
         "3d821b58-8ada-4e38-af27-e149c7a42ada"
       ],
       "settings": {
