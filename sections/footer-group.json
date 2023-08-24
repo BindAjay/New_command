@@ -2,6 +2,16 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "5068ab21-88de-42ea-92e1-9a4d67dac0fa": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -34,7 +44,7 @@
         "3d821b58-8ada-4e38-af27-e149c7a42ada"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
@@ -50,6 +60,7 @@
     }
   },
   "order": [
+    "5068ab21-88de-42ea-92e1-9a4d67dac0fa",
     "footer"
   ]
 }
