@@ -83,7 +83,7 @@
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="pd-li grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
@@ -97,7 +97,7 @@
              show_rating: section.settings.show_rating,
              show_quick_add: section.settings.enable_quick_add,
              section_id: section.id %}
-              
+
           </li>
         {%- else -%}
           {%- for i in (1..4) -%}
@@ -259,12 +259,12 @@
         "type": "text",
         "id": "view_text",
         "label": "View Text"
-      },{
+      }, {
         "type": "checkbox",
-        "id":"Show_view_details",
+        "id": "Show_view_details",
         "default": true,
         "label": "Show view details button"
-      },{
+      }, {
         "type": "select",
         "id": "view_all_style",
         "label": "t:sections.featured-collection.settings.view_all_style.label",

@@ -8,6 +8,7 @@
   background: #000;
   color: #fff;
   width: 90%;
+  display:none;
 }
 sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom{
   background-color: pink;
