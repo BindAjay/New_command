@@ -164,7 +164,7 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="desk-head header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
@@ -177,7 +177,7 @@
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <h1 class="head_heading_tab123 header__heading">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
@@ -346,7 +346,42 @@
         {%- endif -%}
       </a>
     </div>
+     
   </header>
+  <div class="field" id="mobile-ser-field">
+      <input class="search__input field__input"
+        id="{{ input_id }}"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'general.search.search' | t }}"
+        {%- if settings.predictive_search_enabled -%}
+          role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results"
+          aria-controls="predictive-search-results"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        {%- endif -%}
+      >
+      <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
+        <svg class="icon icon-close" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-reset">
+        </svg>
+      </button>
+      <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+        <svg class="icon icon-search" aria-hidden="true" focusable="false">
+          <use href="#icon-search">
+        </svg>
+      </button>
+    </div>
+
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}

@@ -11,10 +11,88 @@
   width: 90%;
   display:none;
 }
-sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom{
-  background-color: pink;
+#mobile-ser-field{
+  display: none;
+  width: 95%;
+  margin: 0 auto;
 }
-@media screen and (max-width:768){
+.gradient .header-wrapper .header{
+  /* align-items: baseline;
+    display: flex; */
+}
+@media screen and (max-width:768px){
+
+.gradient .header-wrapper .header {
+  display:flex;
+}
+.gradient .header-wrapper .header .dis-hid1{
+display: block;
+margin-top: 0;
+}
+.gradient .header-wrapper .header .dis-hid1 .deskt_menu_tab1{
+  display: none;
+}
+.head_heading_tab123 .header__heading-link .h2{
+  font-size: 20px;
+  }
+  .gradient .header-wrapper .header .head_heading_tab123{
+    text-align: left;
+    width: 50%;
+  } 
+  .dis-hid1  #search-field{
+    width:100%;
+  }
+}
+@media screen and (max-width:425px){
+  #mobile-ser-field{
+    display: block;
+  }
+  .gradient .header-wrapper .header{
+    justify-content: space-between;
+  }
+  .gradient .header-wrapper .header .dis-hid1{
+    display: none;
+  }
+}
+.header__inline-menu{
+  margin-top: 5%;
+  /* margin-left: 20% !important; */
+  width: 100%;
+}
+#search-field{
+  width:70%;
+  margin:0 auto;
+  border:none;
+  outline:none;
+}
+#search-field:after{
+  box-shadow: none;
+}
+#search-field .search__input{
+  border-radius: 20px;
+  /* width:50px; */
+  border: none;
+  outline: none;
+  background-color:aliceblue;
+}
+#mobile-ser-field:after{
+  box-shadow: none;
+}
+#mobile-ser-field .search__input{
+  border-radius: 20px;
+  /* width:50px; */
+  border: none;
+  outline: none;
+  background-color:aliceblue;
+}
+ 
+.card_tt{
+  text-decoration: none;
+}
+sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom{
+  /* background-color: pink; */
+}
+@media screen and (max-width:768px){
   .footer-block.grid__item.scroll-trigger.animate--slide-in:nth-child(1){
     width:100%;
     text-align: center;
@@ -527,8 +605,9 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: inherit;
+  letter-spacing: 3px;
 }
 
 .link--text {

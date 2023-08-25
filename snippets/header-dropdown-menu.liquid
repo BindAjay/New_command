@@ -5,8 +5,41 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
+<nav class="dis-hid1 header__inline-menu inline-menu-tab1">
+  <div class="field" id="search-field">
+      <input class="search__input field__input"
+        id="{{ input_id }}"
+        type="search"
+        name="q"
+        value="{{ search.terms | escape }}"
+        placeholder="{{ 'general.search.search' | t }}"
+        {%- if settings.predictive_search_enabled -%}
+          role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results"
+          aria-controls="predictive-search-results"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        {%- endif -%}
+      >
+      <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+      <input type="hidden" name="options[prefix]" value="last">
+      <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
+        <svg class="icon icon-close" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-reset">
+        </svg>
+      </button>
+      <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+        <svg class="icon icon-search" aria-hidden="true" focusable="false">
+          <use href="#icon-search">
+        </svg>
+      </button>
+    </div>
+  <ul class="deskt_menu_tab1 list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}

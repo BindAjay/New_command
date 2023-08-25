@@ -1,4 +1,5 @@
-var list_pro = document.querySelectorAll('.pd-li');
+// View Details button
+var list_pro = document.querySelectorAll(".pd-li");
 var vie = document.querySelectorAll(".view_details1");
 var prtitl = document.querySelectorAll('.card_tt');
 list_pro.forEach((libtn)=>{
@@ -12,5 +13,16 @@ list_pro.forEach((libtn)=>{
           })
         libtn.querySelector('.view_details1').style.display="block";
         libtn.querySelector('.card_tt').style.color="red";
+        // libtn.querySelector('.full-unstyled-link').style.text-decoration= "none";
+    });
+})
+
+list_pro.forEach((listbt) =>{
+   listbt.addEventListener('mouseout',()=>{
+    prtitl.forEach((protitl) =>{
+      protitl.style.color="#000";
     })
+       listbt.querySelector('.view_details1').style.display="none";
+       listbt.querySelector('.card_tt').style.color="#000";
+   })
 })
