@@ -1,3 +1,15 @@
+h2#SectionHeading-template--20536627921188__fc7b88dc-ad18-40b0-9d1d-026816bbd2cb {
+  margin: 0 auto;
+}
+.Popular1{ 
+display: flex;
+gap: 25px;
+color:red;
+}
+.Popular1 li:nth-child(1) {
+  color: #000;
+  list-style: none;
+}
 .view_details1{
   margin-top: -20%;
   margin-left: 5%;
