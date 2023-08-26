@@ -25,6 +25,31 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "3ca8fa54-1dd2-4565-94be-2a6a70560a71": {
+          "type": "text",
+          "settings": {
+            "popular_menu": "Yellow Bags"
+          }
+        },
+        "cd8ab66b-a7e4-4e1d-b35f-dc0f89006af2": {
+          "type": "text",
+          "settings": {
+            "popular_menu": "Crossbody bags"
+          }
+        },
+        "f55d58bb-746d-4b50-bb9e-26bd9b07b040": {
+          "type": "text",
+          "settings": {
+            "popular_menu": "Black bags"
+          }
+        }
+      },
+      "block_order": [
+        "3ca8fa54-1dd2-4565-94be-2a6a70560a71",
+        "cd8ab66b-a7e4-4e1d-b35f-dc0f89006af2",
+        "f55d58bb-746d-4b50-bb9e-26bd9b07b040"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "header",

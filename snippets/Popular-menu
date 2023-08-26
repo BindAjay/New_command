@@ -1,6 +1,0 @@
-<ul class="Popular1">
-    <li>Popular Search</li>
-    {% for block in section.blocks %}
-        <li>{{block.settings.popular_menu}}</li>
-    {% endfor %}
-</ul>
