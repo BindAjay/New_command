@@ -1,3 +1,6 @@
+.menu-img_link{
+  display: inline-block;
+}
 h2#SectionHeading-template--20536627921188__fc7b88dc-ad18-40b0-9d1d-026816bbd2cb {
   margin: 0 auto;
 }
@@ -5,6 +8,7 @@ h2#SectionHeading-template--20536627921188__fc7b88dc-ad18-40b0-9d1d-026816bbd2cb
 display: flex;
 gap: 25px;
 color:red;
+cursor:pointer;
 }
 .Popular1 li:nth-child(1) {
   color: #000;
@@ -42,9 +46,12 @@ color:red;
     justify-content: center;
     flex-direction: column;
 }
-
+@media screen and (max-width:1025px){
+  .Popular1{
+    display: none;
+  }
+}
 @media screen and (max-width:768px){
-
 .gradient .header-wrapper .header {
   display:flex;
 }

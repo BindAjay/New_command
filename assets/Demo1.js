@@ -26,3 +26,16 @@ list_pro.forEach((listbt) =>{
        listbt.querySelector('.card_tt').style.color="#000";
    })
 })
+
+//Header popular Serach bar ...
+inn=window.location.host;
+ut="http://"+inn+"/search?q=";
+var bard_list = document.querySelectorAll(".Popular1 li");
+bard_list.forEach((nam) =>{
+  nam.addEventListener('click',()=>{
+    tttval = nam.innerHTML;
+     serurl = tttval.replace(" ", "+");  
+      window.location.href= ut+tttval;
+  });
+})
+
