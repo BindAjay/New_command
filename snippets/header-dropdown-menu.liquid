@@ -109,6 +109,36 @@
                       </details>
                     {%- endif -%}
                   </li>
+                  {%- comment -%} <li class="menu-link menu-img_">
+                    <summary
+                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                          class="header__menu-item link link--text list-menu__item focus-inset caption-large"
+                        >
+                      {%- if childlink.type == 'collection_link' -%}
+                         {% assign linkCollection = childlink.object %} 
+                            <div class="nav-collection_image1"> 
+                              <img crossorigin="anonymous" class="nav-child-link-image" src="{{linkCollection.products.first.featured_image.src | product_img_url: '140x'}}" alt="{{grandchild_link.title}}">
+                                <span>{{ childlink.title | escape }}</span> 
+                              </div> 
+                        {%- endif -%}
+                        </summary>
+		              </li> {%- endcomment -%}
+                {%- endfor -%}
+                {%- for childlink in link.links -%}
+                  <li class="menu-link menu-img_">
+                    <summary
+                          id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                          class="header__menu-item link link--text list-menu__item focus-inset caption-large"
+                        >
+                      {%- if childlink.type == 'collection_link' -%}
+                         {% assign linkCollection = childlink.object %} 
+                            <div class="nav-collection_image1"> 
+                              <img crossorigin="anonymous" class="nav-child-link-image" src="{{linkCollection.products.first.featured_image.src | product_img_url: '140x'}}" alt="{{grandchild_link.title}}">
+                                <span>{{ childlink.title | escape }}</span> 
+                              </div> 
+                        {%- endif -%}
+                        </summary>
+		              </li>
                 {%- endfor -%}
               </ul>
               {%- comment -%} <ul
@@ -131,9 +161,8 @@
                         {%- endif -%}
                         </summary>
 		              </li>
-                {%endfor%}
-              </ul> lll
-            {%- endcomment -%}
+                {%- endfor -%}
+              </ul>  {%- endcomment -%}
             </details>
           </header-menu>
         {%- else -%}

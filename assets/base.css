@@ -1,3 +1,13 @@
+#HeaderMenu-MenuList-1{
+  display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 840px;
+}
+#HeaderMenu-MenuList-1 li:not(.menu-img_){
+
+  /* grid-row: 2 ; */
+  grid-column:1;
+}
 .menu-img_link{
   display: inline-block;
 }

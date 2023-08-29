@@ -39,3 +39,13 @@ bard_list.forEach((nam) =>{
   });
 })
 
+var view_btn = document.querySelectorAll(".view_details1");
+
+view_btn.forEach((v_btn) =>{
+  i=0;
+  v_btn.addEventListener("click",() =>{
+    i++;
+     console.log(i);
+     document.querySelector(".quick-box").style.display="block";
+  })
+})
