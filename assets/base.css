@@ -1,3 +1,6 @@
+.img_title a{
+  text-decoration: none;
+}
 #HeaderMenu-MenuList-1{
   display: grid;
     grid-template-columns: auto auto auto auto;
@@ -7,6 +10,9 @@
 
   /* grid-row: 2 ; */
   grid-column:1;
+}
+#HeaderMenu-MenuList-1 li{
+  grid-row:1;
 }
 .menu-img_link{
   display: inline-block;
