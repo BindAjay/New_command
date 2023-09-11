@@ -15,14 +15,9 @@
           "settings": {
           }
         },
-        "0df27878-ef17-48bf-a2ac-b5e8ca06c1e9": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/product-rating-image\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "95551fcc-08a4-48b6-9679-f48768e42854": {
+          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
           "settings": {
-            "api_key": "",
-            "store_hash": "",
-            "product_id": "",
-            "width": "",
-            "height": ""
           }
         },
         "price": {
@@ -48,15 +43,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "1346b36d-5056-49b0-8d08-837b8e5e2f6b": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "use_metafields": false,
-            "sku_tagtype": "sku",
-            "is_featured_product": false,
-            "featured_product_handle": ""
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -72,12 +58,11 @@
       "block_order": [
         "vendor",
         "title",
-        "0df27878-ef17-48bf-a2ac-b5e8ca06c1e9",
+        "95551fcc-08a4-48b6-9679-f48768e42854",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "1346b36d-5056-49b0-8d08-837b8e5e2f6b",
         "description",
         "share"
       ],
@@ -113,10 +98,27 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "1694416815697c67c5": {
+      "type": "apps",
+      "blocks": {
+        "17a2df79-d8a9-4969-a68f-4fc32914370c": {
+          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Form\/0cf5caa0-e138-46b8-999b-520d16633e4c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "17a2df79-d8a9-4969-a68f-4fc32914370c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "1694416815697c67c5"
   ]
 }
