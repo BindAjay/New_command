@@ -152,7 +152,7 @@
         "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Collection_star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
         "disabled": false,
         "settings": {
-          "collection_target_class": ".grid__item"
+          "collection_target_class": ".product-grid .grid__item"
         }
       }
     },
