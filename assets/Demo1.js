@@ -40,7 +40,7 @@ bard_list.forEach((nam) =>{
 })
 // Header popular Serach bar close here //
 
-// View Details button here 
+// open popup on click on View Button and show product with the help of CLI
 var view_btn = document.querySelectorAll(".view_details1");
 var pro_url="";
 view_btn.forEach((v_btn) =>{
@@ -48,24 +48,19 @@ view_btn.forEach((v_btn) =>{
      pro_hand = v_btn.getAttribute("hand");
      pro_url = v_btn.getAttribute("at");
      pro_id = v_btn.getAttribute("id");
-     //console.log("id"+pro_id);
-     //console.log("http://"+inn+pro_url+"json");
+     //console.log(inn);
      urr1 = "http://"+inn+pro_url+"/?section_id=template--20576124404004__main";
-     //console.log(urr1);
      fetch(urr1)
      .then(response =>{
        return response.text();
      }).then((data) =>{
-      // prodata = data['template--20576124404004__main-product'];
-      console.log('1.',data);
-      // console.log('2..',JSON.stringify(data));
-      document.querySelector('.demo').innerHTML = data;
-     //console.log(data);
+      document.querySelector(".quick-box").style.display="block";
+      document.querySelector(".quick-text-box").innerHTML = data;
      })
-     //document.querySelector(".quick-box").style.display="block";
   })
 })
-// close View Details button here
+// close popup on click on View Button and show product with the help of CLI 
+
 //Fetch Section API  
 // console.log("Fetch Section")
 // fetch('http://127.0.0.1:9292/?sections=featured-collection')
@@ -82,7 +77,7 @@ view_btn.forEach((v_btn) =>{
 //   return response.json();
 // }).then((data) =>{
 //    console.log(data);
-// })
+// })d
 
 // view click button 
 

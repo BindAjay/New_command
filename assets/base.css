@@ -1,3 +1,15 @@
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+/* box-shadow: inset 0 0 5px grey; */
+background-color: #fff;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background:gray; 
+border-radius: 10px;
+}
 .img_title a{
   text-decoration: none;
 }
