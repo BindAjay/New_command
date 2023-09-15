@@ -1,10 +1,15 @@
-// View Details button desgin
+//View Details button desgin
 var list_pro = document.querySelectorAll(".pd-li");
 var vie = document.querySelectorAll(".view_details1");
 var prtitl = document.querySelectorAll('.card_tt');
+
 list_pro.forEach((libtn)=>{
-    i=0;
+      // var col_libtn = libtn.querySelector(".color-img");
+      // col_libtn.addEventListener('mouseover',()=>{
     libtn.addEventListener('mouseover',()=>{
+    // console.log("list_product",libtn.querySelector(".color-img"));
+     //console.log(col_libtn);
+
         vie.forEach((viw_btn1) =>{
             viw_btn1.style.display="none";
           }); 
@@ -81,3 +86,29 @@ view_btn.forEach((v_btn) =>{
 
 // view click button 
 
+// Open variant Color  in collection cart 
+var color_btn = document.querySelectorAll(".color-box1");
+color_btn.forEach((color_va) =>{
+  color_va.addEventListener('click',() =>{  
+    color_txt = color_va.getAttribute("id");
+    clos = color_va.closest(".card-color-code");
+    console.log(clos.querySelector(".color-img img"));
+    clos.querySelector(".color-img img").srcset=color_txt;
+    clos.querySelector(".color-img img").src=color_txt;
+    //console.log(clos.querySelector(".color-img img").src=color_txt);
+  })
+})
+//End variant Color in collection cart
+
+
+// var img12 = document.querySelectorAll(".color-img img");
+// img12.forEach((imgurl) =>{
+//   // console.log(imgurl);
+// })
+
+// var col_list_pro = document.querySelectorAll(".pd-li .card-color-code .card__inner");
+// col_list_pro.forEach((color_list_m) =>{
+//   color_list_m.addEventListener('mouseover',()=>{
+//    // alert();
+//   })
+// })

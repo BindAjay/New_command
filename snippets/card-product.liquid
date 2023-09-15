@@ -38,6 +38,7 @@
     <div
       class="
         card
+        card-color-code
         card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -54,7 +55,7 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
+            <div class="media color-img media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
@@ -141,17 +142,17 @@
       {% if section.settings.Show_view_details == true%}
         <button class="view_details1" at="{{ card_product.url }}" hand="{{ card_product.handle }}" id="{{ card_product.id }}">View Details</button>
       {% endif %}
-      mz,/znmxzn/xz
-      <select name="color-id123" class="no-js" data-product-select>
+        <div name="color-id123" class="color-al" data-product-select>
                 {% for variant in card_product.variants %}
-                    <option
-                            {%- comment -%} {% if variant == current_variant %}selected="selected"{% endif %}
-                            {% unless variant.available %}disabled="disabled"{% endunless %} {%- endcomment -%}
-                            value="{{ variant.id }}">
-                        {{ variant.title }}
-                    </option>
+                    <span class="color-box1"
+                             {% if variant == current_variant %}selected="selected"{% endif %}
+                            {% unless variant.available %}disabled="disabled"{% endunless %}
+                            id="{{ variant | image_url }}"
+                            value="{{ variant.id }}" style="background-color: {{ variant.title }};">
+                      </span>
+                       {%- comment -%} <img src="{{ variant | image_url }}" height="30px" width="30px"> {%- endcomment -%}
                 {% endfor %}
-        </select>
+          </div>
       <div class="card__content">
         <div class="card__information">
           <h3
