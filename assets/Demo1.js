@@ -53,14 +53,15 @@ view_btn.forEach((v_btn) =>{
      pro_hand = v_btn.getAttribute("hand");
      pro_url = v_btn.getAttribute("at");
      pro_id = v_btn.getAttribute("id");
-     //console.log(inn);
-     urr1 = "http://"+inn+pro_url+"/?section_id=template--20576124404004__main";
+     console.log('1....',"http://"+inn+pro_url+"/?section_id=template--21223264092452__main");
+     urr1 = "http://"+inn+pro_url+"/?section_id=template--21223264092452__main";
      fetch(urr1)
      .then(response =>{
        return response.text();
      }).then((data) =>{
       document.querySelector(".quick-box").style.display="block";
       document.querySelector(".quick-text-box").innerHTML = data;
+      console.log("Data",data);
      })
   })
 })
@@ -112,3 +113,26 @@ color_btn.forEach((color_va) =>{
 //    // alert();
 //   })
 // })
+
+// window.onload = (event) => {
+//   console.log(window.location);
+// };
+
+// console.log("Find Script",document.scripts);
+//console.log(document.images);
+
+// NEWF = () =>{
+//   console.log("new Functoion");
+// }
+// i =1;
+// run = () =>{
+//  i++;
+//  console.log("Run Infinite Time",i);
+// }
+
+// cls = setInterval(run,2000);
+
+
+
+
+
