@@ -140,8 +140,10 @@
         </div>
       </div>
       {% if section.settings.Show_view_details == true%}
-        <button class="view_details1" at="{{ card_product.url }}" hand="{{ card_product.handle }}" id="{{ card_product.id }}">View Details</button>
+        {%- comment -%} <button class="view_details1" at="{{ card_product.url }}" hand="{{ card_product.handle }}" id="{{ card_product.id }}">View Details</button> {%- endcomment -%}
       {% endif %}
+      <button class="view_details1" at="{{ card_product.url }}" hand="{{ card_product.handle }}" id="{{ card_product.id }}">View Details</button>
+
         <div name="color-id123" class="color-al" data-product-select>
                 {% for variant in card_product.variants %}
                     <span class="color-box1"

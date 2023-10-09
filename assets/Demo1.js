@@ -32,6 +32,27 @@ list_pro.forEach((listbt) =>{
    })
 })
 // close view design button
+//open collection cart 
+
+var coll_btn = document.querySelectorAll('.card-box-12');
+coll_btn.forEach((crt_btn)=>{
+  crt_btn.addEventListener('mouseover',()=>{
+    vie.forEach((viw_btn1) =>{
+      viw_btn1.style.display="none";
+    }); 
+  crt_btn.querySelector('.view_details1').style.display="block";
+  })
+})
+
+coll_btn.forEach((crt_btn)=>{
+  crt_btn.addEventListener('mouseout',()=>{
+    // vie.forEach((viw_btn1) =>{
+    //   viw_btn1.style.display="none";
+    // }); 
+  crt_btn.querySelector('.view_details1').style.display="none";
+  })
+})
+// close collection cart
 //Header popular Serach bar ...
 inn=window.location.host;
 ut="http://"+inn+"/search?q=";
@@ -131,6 +152,84 @@ color_btn.forEach((color_va) =>{
 // }
 
 // cls = setInterval(run,2000);
+
+//Open Back History API 
+var pod_tit = document.querySelector('.MY-BRAND');
+//console.log("Product title",pod_tit);
+pod_tit.addEventListener('click',()=>{
+  window.history.back();
+  url = window.navigator.language;
+console.log(url);
+})
+// Close Back History API 
+
+// open go History API
+// var pod_tit = document.querySelector('.MY-BRAND');
+// console.log("Product title",pod_tit);
+// pod_tit.addEventListener('click',()=>{
+//  window.history.go(-2);
+// })
+// Close go History API
+
+var nav_cook = navigator.cookieEnabled
+console.log(nav_cook);
+if (!navigator.cookieEnabled){
+  console.log("Hello");
+}
+else{
+  console.log("Hey");
+}
+
+// localStorage.setItem('Massage',"LocalStorage");
+// localStorage.setItem("mytime", Date.now());
+// localStorage.setItem("Name","OnsideShe");
+// var inp = document.querySelector('.Strinp');
+// var p = document.querySelector(".stor-vl");
+// inp.addEventListener('keyup',()=>{
+//    localStorage.setItem('value',inp.value);
+//    localStorage.removeItem("Massage");
+//    console.log(localStorage.key(7));
+//    console.log(localStorage.length);
+//    document.querySelector('.stor-vl').innerHTML=localStorage.getItem("value");
+//  // p.innerHTML=localStorage
+// })
+
+
+// Open Add to cart button 
+var Adt_btn = document.querySelector('.Second-button');
+Adt_btn.addEventListener('click',()=>{
+   id12 = document.querySelector('.pd-id').getAttribute("id");
+   qut = document.querySelector('.quantity__input').value;
+  console.log(`id ${id12} Quntity ${qut}`)
+   var data = [];
+   data.push({
+    'id':id12,
+    'quantity':qut
+   });
+   let formData = {
+    'items':data,
+    sections:'card-drawer'
+   };
+   fetch('/cart/add.js',{
+    method:'POST',
+    headers:{
+      Accept:'application/json',
+      'Content-Type':'application/json'
+    },
+    body:JSON.stringify(formData)
+   }).then((response)=>{
+    return response.json();
+   })
+  //  .then((finall) =>{
+  //   console.log(finall);
+  // })
+  .catch(error => {
+    console.error("ERROR :",error);
+  });
+})
+//Close Add To cart button
+
+
 
 
 
