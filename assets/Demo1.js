@@ -247,7 +247,7 @@ Adt_btn.addEventListener('click',()=>{
   });
 })
 //Close Add To cart button
-
+alert();
 
 fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
 .then((response)=>{
