@@ -229,6 +229,8 @@ Adt_btn.addEventListener('click',()=>{
 })
 //Close Add To cart button
 
+var jbl_btn = document.querySelectorAll(".igp_clas");
+console.log(jbl_btn);
 
 
 
