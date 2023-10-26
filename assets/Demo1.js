@@ -6,13 +6,7 @@ window.addEventListener("load", (event) => {
     load_btn1.classList.remove("loding-show");
   })
 });
-$( document ).ready(function() {
-   var loading1 = document.querySelectorAll('.loding-logo');
-  loading1.forEach((load_btn1)=>{
-    console.log("loader",load_btn1);
-    load_btn1.classList.add("loding-show");
-  })
-});
+
 //classList.add("my-class")
 //View Details button desgin
 var list_pro = document.querySelectorAll(".pd-li");
