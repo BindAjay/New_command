@@ -3,7 +3,7 @@ window.addEventListener("load", (event) => {
   alert();
  var loading1 = document.querySelectorAll('.loding-logo');
   loading1.forEach((load_btn1)=>{
-    load_btn1.style.display="block";
+    load_btn1.style.display="none !important";
   })
 });
 //View Details button desgin
