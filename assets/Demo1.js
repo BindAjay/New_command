@@ -1,11 +1,11 @@
- alert();
+//  alert();
 
-fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
-.then((response)=>{
-    return response.json()
-}).then((ftt)=>{
-    console.log('ftt....');
-     })
+// fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
+// .then((response)=>{
+//     return response.json()
+// }).then((ftt)=>{
+//     console.log('ftt....');
+//      })
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
