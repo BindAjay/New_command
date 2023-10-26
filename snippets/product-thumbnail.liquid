@@ -109,14 +109,14 @@
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
     </div>
-    <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
-                <span class="custom_logo_text">Tom&Jarray</span>
-              </div>
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
       <span class="visually-hidden">
         {{ 'products.product.media.open_media' | t: index: position }}
       </span>
     </button>
+    <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
+                <span class="custom_logo_text">Tom&Jarray</span>
+              </div>
   </modal-opener>
 
   {%- if media.media_type != 'image' -%}
