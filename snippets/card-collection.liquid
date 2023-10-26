@@ -73,6 +73,9 @@ Usage:
             width="{{ card_collection.featured_image.width }}"
             loading="lazy"
             class="motion-reduce">
+         <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
+                <span class="custom_logo_text">Tom&Jarray</span>
+              </div>
           </div>
         </div>
       {%- endif -%}
