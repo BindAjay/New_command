@@ -1,8 +1,6 @@
 
 window.addEventListener("load", (event) => {
-  alert();
  var loading1 = document.querySelectorAll('.loding-logo');
-  console.log(loading1);
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
   })
