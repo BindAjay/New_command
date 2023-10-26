@@ -1,3 +1,13 @@
+ alert();
+
+fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
+.then((response)=>{
+    return response.json()
+}).then((ftt)=>{
+    console.log('ftt....');
+     })
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
 var loading1 = document.querySelectorAll('.loding-logo');
   loading1.forEach((load_btn1)=>{
@@ -247,15 +257,7 @@ Adt_btn.addEventListener('click',()=>{
   });
 })
 //Close Add To cart button
-alert();
-
-fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
-.then((response)=>{
-    return response.json()
-}).then((ftt)=>{
-    console.log('ftt....');
-     })
-
+ 
 
 
 
