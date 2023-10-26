@@ -308,7 +308,13 @@
                 block: block,
                 share_link: share_url
               %}
-
+            {% when 'image' %}
+                <div>
+                     <img src="{{ block.settings.image1 | img_url:'master'}}">
+            </div>
+            <div>
+                <p>{{ block.settings.logo-text }}</p>
+            </div>
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
