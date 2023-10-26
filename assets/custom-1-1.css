@@ -9,7 +9,7 @@
 }
 .card__media .loding-logo{
   z-index:9999;
-  display:none;
+  display: none;
 }
 /* .card__media .igp_clas{
   display:none;
