@@ -1,3 +1,5 @@
+
+alert();
 //View Details button desgin
 var list_pro = document.querySelectorAll(".pd-li");
 var vie = document.querySelectorAll(".view_details1");
@@ -229,10 +231,7 @@ Adt_btn.addEventListener('click',()=>{
 })
 //Close Add To cart button
 
-window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
-  alert();
-});
+
 
 
 
