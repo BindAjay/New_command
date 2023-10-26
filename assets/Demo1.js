@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-var loading1 = document.querySelectorAll('.loding-logo');
-  loading1.forEach((load_btn1)=>{
-    console.log("loader",load_btn1);
-    load_btn1.classList.remove("loding-show");
-  });
-});
+// document.addEventListener("DOMContentLoaded", (event) => {
+// var loading1 = document.querySelectorAll('.loding-logo');
+//   loading1.forEach((load_btn1)=>{
+//     console.log("loader",load_btn1);
+//     load_btn1.classList.remove("loding-show");
+//   });
+// });
 window.addEventListener("load", (event) => {
  var loading1 = document.querySelectorAll('.loding-logo');
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
-   // load_btn1.classList.remove("loding-show");
+    load_btn1.classList.remove("loding-show");
     setTimeout(function(){
       load_btn1.classList.add("loding-show");
     },1500);
