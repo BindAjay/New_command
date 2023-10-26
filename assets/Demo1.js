@@ -10,9 +10,9 @@ window.addEventListener("load", (event) => {
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
     //load_btn1.classList.remove("loding-show");
-    setTimeout(function(){
+    // setTimeout(function(){
       load_btn1.classList.add("loding-show");
-    },1500);
+    // },1500);
   })
 });
 
