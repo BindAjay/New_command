@@ -23,3 +23,8 @@ background: url('https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-load
 /* .card__media .igp_clas{
   display:none;
 } */
+
+.placeholder-img{
+  position: absolute;
+  background:red;
+}
