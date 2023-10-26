@@ -250,10 +250,12 @@ Adt_btn.addEventListener('click',()=>{
 
 
 fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
-  .then((response)=>{return response.json()
-                   }).then((ftt)=>{
+  .then((response)=>{
+    return response.json()
+})
+  .then((ftt)=>{
     console.log(ftt);
-                   })
+     })
 
 
 
