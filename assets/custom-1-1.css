@@ -26,7 +26,7 @@ background: url('https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-load
 
 .placeholder-img{
   position: absolute;
-  background:red;
+  background:lightgray;
   color:#fff;
   padding-top:50%;
   text-align:center;
