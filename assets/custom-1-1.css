@@ -16,7 +16,7 @@
 }
 img:before{
   content: ''; 
-            background: url('bg.png')  
+            background: url('https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-loader-img-new.png?v=1698301705')  
                 no-repeat center center/cover; 
 }
 /* .card__media .igp_clas{
