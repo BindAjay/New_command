@@ -3,9 +3,9 @@ window.addEventListener("load", (event) => {
   alert();
  var loading1 = document.querySelectorAll('.loding-logo');
   console.log(loading1);
-  // loading1.forEach((load_btn1)=>{
-  //   load_btn1.style.display="none !important";
-  // })
+  loading1.forEach((load_btn1)=>{
+    load_btn1.style.display="none !important";
+  })
 });
 //View Details button desgin
 var list_pro = document.querySelectorAll(".pd-li");
