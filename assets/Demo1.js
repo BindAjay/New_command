@@ -4,7 +4,7 @@ window.addEventListener("load", (event) => {
  var loading1 = document.querySelectorAll('.loding-logo');
   console.log(loading1);
   loading1.forEach((load_btn1)=>{
-    load_btn1.style.display="none !important";
+    load_btn1.style.display="block !important";
   })
 });
 //View Details button desgin
