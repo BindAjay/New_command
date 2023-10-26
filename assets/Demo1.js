@@ -229,6 +229,10 @@ Adt_btn.addEventListener('click',()=>{
 })
 //Close Add To cart button
 
+window.onload = function(e){
+  alert();
+}
+
 
 
 
