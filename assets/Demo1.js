@@ -6,7 +6,7 @@ window.addEventListener("load", (event) => {
     load_btn1.classList.remove("loding-show");
     setTimeout(function(){
       load_btn1.classList.add("loding-show");
-    },1000);
+    },1500);
   })
 });
 
