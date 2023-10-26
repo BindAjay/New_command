@@ -229,9 +229,10 @@ Adt_btn.addEventListener('click',()=>{
 })
 //Close Add To cart button
 
-window.onload = function(e){
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
   alert();
-}
+});
 
 
 
