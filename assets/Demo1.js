@@ -230,6 +230,7 @@ Adt_btn.addEventListener('click',()=>{
 //Close Add To cart button
 
 var jbl_btn = document.querySelectorAll(".igp_clas");
+console.log("123456");
 console.log(jbl_btn);
 
 
