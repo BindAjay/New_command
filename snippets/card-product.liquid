@@ -55,7 +55,7 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-           <img class="igp_clas" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-loader-img-new.png?v=1698301705">
+           
             <div class="media color-img media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -100,6 +100,7 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
+          <img class="igp_clas" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-loader-img-new.png?v=1698301705">
             </div>
           </div>
         {%- endif -%}
