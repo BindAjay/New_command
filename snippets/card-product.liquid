@@ -58,9 +58,10 @@
             <div class="media color-img media--transparent media--hover-effect">
               
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
-                <span class="custom_logo_text">PEWOX</span>
+              <div class="loding-logo loding-show">             
+                <img class="loder1" src="https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-loader-img-new.png?v=1698301705" style="z-index:9999">
               </div>
+              
               <img
                 srcset="
                   {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
@@ -103,7 +104,9 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
-             
+             <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
+                <span class="custom_logo_text">PEWOX</span>
+              </div>
             </div>
           </div>
         {%- endif -%}
