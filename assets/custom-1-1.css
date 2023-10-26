@@ -18,6 +18,7 @@ img:before{
 content: ''; 
 background: url('https://cdn.shopify.com/s/files/1/0792/5422/5188/files/igp-loader-img-new.png?v=1698301705')  
  no-repeat center center/cover; 
+  display: block !important;
 }
 /* .card__media .igp_clas{
   display:none;
