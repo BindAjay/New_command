@@ -1,28 +1,23 @@
 //  alert();
 
-// fetch('https://healthometer-pdf-generator-821675826316.herokuapp.com/downloadCertificate?name=John')
-// .then((response)=>{
-//     return response.json()
-// }).then((ftt)=>{
-//     console.log('ftt....');
-//      })
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
-var loading1 = document.querySelectorAll('.placeholder-img');
-  loading1.forEach((load_btn1)=>{
-    console.log("loader",load_btn1);
-    load_btn1.classList.remove("loding-show");
-  });
-});
+
+// document.addEventListener("DOMContentLoaded", (event) => {
+// var loading1 = document.querySelectorAll('.placeholder-img');
+//   loading1.forEach((load_btn1)=>{
+//     console.log("loader",load_btn1);
+//     load_btn1.classList.remove("loding-show");
+//   });
+// });
 window.addEventListener("load", (event) => {
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
-    //load_btn1.classList.remove("loding-show");
-    // setTimeout(function(){
+    load_btn1.classList.remove("loding-show");
+    setTimeout(function(){
       load_btn1.classList.add("loding-show");
-    // },1500);
+     },1500);
   })
 });
 
