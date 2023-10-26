@@ -187,14 +187,15 @@
                         {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
                       {%- endif -%}
                     {%- endif -%}
-<div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
-                           <span class="custom_logo_text">Tom&Jarray</span>
-                          </div>
+
                     {%- if section.settings.parallax -%}
                          
                     </div>
                   </div>
                 {%- endif -%}
+            <div class="placeholder-img" style=" padding-top: {{ 100 | divided_by: media_aspect_ratio }}%;">
+                           <span class="custom_logo_text">Tom&Jarray</span>
+                          </div>
               </div>
 
               {%- if link_slide -%}
