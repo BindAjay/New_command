@@ -7,6 +7,9 @@
     margin-top: 2%;
     padding: 1%;
 }
+.card__media .loding-logo{
+  z-index:9999;
+}
 /* .card__media .igp_clas{
   display:none;
 } */
