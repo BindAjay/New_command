@@ -1,4 +1,4 @@
-.loding-logo{
+.card__media .loding-logo{
   z-index:9999;
 }
 .customer:not(.account):not(.order) {
