@@ -57,6 +57,7 @@
         "084d9b92-4aa7-4a60-bb14-aab8bde5daed": {
           "type": "image",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/igp-loader-img-new.png",
             "logo-text": ""
           }
         }
