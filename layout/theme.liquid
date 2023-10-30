@@ -289,6 +289,9 @@
     </ul>
 
     <script>
+       {%- assign pin_text = settings.pincode_vl -%}
+   var pin = "{{ pin_text }}";
+    alert(pin);
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
