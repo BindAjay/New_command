@@ -11,6 +11,10 @@ var pin_value = pin.split(",");
 for( x of pin_value){
   console.log(x);
 }
+var add_pin = document.querySelector('#pintxt');
+add_pin.addEventListener('keyup',()=>{
+   add_pin.value = add_pin.value.toUpperCase();
+})
 window.addEventListener("load", (event) => {
   
  var loading1 = document.querySelectorAll('.placeholder-img');
