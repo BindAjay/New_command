@@ -1,8 +1,6 @@
-// {%- assign pin_code = section.settings.pincode_n -%}
+//  alert();
 
- {%- assign pin_text = settings.pincode_vl -%}
-   var pin = "{{ pin_text }}";
-    alert(pin);
+
 
 
 // document.addEventListener("DOMContentLoaded", (event) => {
@@ -13,7 +11,6 @@
 //   });
 // });
 window.addEventListener("load", (event) => {
- 
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
