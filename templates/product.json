@@ -69,7 +69,6 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": "small",
-        "image_html": "shopify:\/\/shop_images\/igp-loader-img-new.png",
         "logo_text": "Jarry",
         "constrain_to_viewport": true,
         "media_fit": "contain",
