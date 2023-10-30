@@ -15,13 +15,16 @@ add_pin.addEventListener('keyup',()=>{
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
   if(LEN==6){
-    console.log(pin_text_val);
+    // console.log(pin_text_val);
     for( x of pin_value){
-      console.log(x);
+      // console.log(x);
       if(pin_text_val==x){
         console.log("Yes");
       }
     }
+  }
+  else{
+    console.log("Length --");
   }
  // console.log(LEN);
 })
