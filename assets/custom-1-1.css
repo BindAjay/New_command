@@ -20,6 +20,9 @@
     font-weight: bold;
   padding:10px;
 }
+.col-5{
+  display:none;
+}
 .same .che{
   border: none;
     background: lightblue;
