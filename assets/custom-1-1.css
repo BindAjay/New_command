@@ -5,6 +5,9 @@
     width: 80%;
   gap:5px;
 }
+.same{
+  padding: 5px 20px;
+}
 .same input{
   border:none;
   outline:none;
