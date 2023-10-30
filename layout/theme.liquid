@@ -289,7 +289,7 @@
     </ul>
 
     <script>
-       
+       {%- assign pin_text = settings.pincode_vl -%}
     pin = "{{ pin_text }}";
     alert(pin);
       window.shopUrl = '{{ request.origin }}';
