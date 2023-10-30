@@ -1,8 +1,4 @@
-var pin = document.querySelectorAll('.pincode_val');
-//console.log(pin);
-pin.forEach((pin_v)=>{
-  console.log(pin_v)
-})
+{%- assign pin_code = section.settings.pincode_n -%}
 
 
 
