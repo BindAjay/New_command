@@ -1,6 +1,11 @@
 .product__media-wrapper .product-media-container{
   position:relative;
 }
+.product__media-wrapper .product-media-container .Logo_image_pdp{
+  position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .Second-button{
     width: 100%;
     font-size: 20px;
