@@ -19,6 +19,7 @@ add_pin.addEventListener('keyup',()=>{
       if(pin_text_val==x){
          document.querySelector(".col-5").style.display="block";
          document.querySelector(".col-3").style.display="none";
+        document.querySelector(".col-2").style.display="none";
       }
       else{
         document.querySelector(".col-2").style.display="block";
@@ -28,6 +29,7 @@ add_pin.addEventListener('keyup',()=>{
   else{
     document.querySelector(".col-5").style.display="none";
     document.querySelector(".col-3").style.display="block";
+    document.querySelector(".col-2").style.display="none";
   }
 })
 window.addEventListener("load", (event) => {
