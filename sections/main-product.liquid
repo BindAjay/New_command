@@ -376,7 +376,7 @@
                           {% render 'icon-caret' %}
                         </summary>
                       {%- endif -%}
-                   <p >{{ section.settings.pincode_box }}</p>
+                  
                       <slideshow-component class="slider-mobile-gutter">
                         {%- assign number_of_slides = recommendations.products_count | plus: 0.0 | divided_by: block.settings.products_per_page | ceil -%}
                         <div id="Slider-{{ block.id }}" class="contains-card contains-card--product complementary-slider grid grid--1-col slider slider--everywhere" role="list"{% if number_of_slides > 1 %} aria-label="{{ 'general.slider.name' | t }}"{% endif %}>
