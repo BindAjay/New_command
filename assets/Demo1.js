@@ -18,6 +18,9 @@ add_pin.addEventListener('keyup',()=>{
     console.log(pin_text_val);
     for( x of pin_value){
       console.log(x);
+      if(pin_text_val==x){
+        console.log("Yes");
+      }
     }
   }
  // console.log(LEN);
