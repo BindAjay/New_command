@@ -1,4 +1,5 @@
-//  alert();
+var pin = document.querySelectorAll('.pincode_val');
+console.log(pin);
 
 
 
