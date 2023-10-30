@@ -23,8 +23,10 @@
 .col-5{
   display:none;
 }
-.col-3 err{
-background:lightpink;  
+.col-2 err{
+background: lightpink;
+    color: red;
+    padding: 12px 20px;  
 }
 .same .che{
   border: none;
