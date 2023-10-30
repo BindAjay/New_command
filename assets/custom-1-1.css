@@ -12,7 +12,7 @@
     padding: 7px 5px;
     margin-top: 4px
 }
-.same .avl{
+.same button{
   border: none;
     background: #fff;
     color: lightgreen;
@@ -22,8 +22,8 @@
 }
 .same .che{
   border: none;
-    background: #fff;
-    color: lightgreen;
+    
+    color: #276ef1;
     font-size: 14px;
     font-weight: bold;
   padding:10px;
