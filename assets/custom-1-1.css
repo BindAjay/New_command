@@ -23,7 +23,7 @@
 .col-5{
   display:none;
 }
-.col-2 err{
+.col-2 .err{
 background: lightpink;
     color: red;
     padding: 12px 20px;  
