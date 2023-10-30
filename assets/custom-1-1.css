@@ -1,3 +1,6 @@
+.pin_box{
+  display:flex;
+}
 .product__media-wrapper .product-media-container{
   position:relative;
 }
