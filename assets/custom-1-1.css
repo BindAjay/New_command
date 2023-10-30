@@ -1,13 +1,21 @@
 .pin_box{
   display:flex;
   border:2px solid;
-  padding: 5px;
+  /* padding: 5px; */
     width: 80%;
   gap:5px;
 }
 .same input{
   border:none;
   outline:none;
+}
+.same button{
+  border: none;
+    background: #fff;
+    color: lightgreen;
+    font-size: 14px;
+    font-weight: bold;
+}
 }
 .product__media-wrapper .product-media-container{
   position:relative;
