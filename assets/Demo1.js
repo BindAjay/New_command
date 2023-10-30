@@ -7,6 +7,8 @@
 //   });
 // });
 console.log("Pincode",pin);
+var pin_value = pin.split(",");
+console.log(pin_value);
 window.addEventListener("load", (event) => {
   
  var loading1 = document.querySelectorAll('.placeholder-img');
