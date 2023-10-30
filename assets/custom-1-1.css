@@ -7,6 +7,7 @@
 }
 .Select_data_box .same{
   text-align:center;
+  border-left: 1px solid;
 }
 .same .span_date{
   padding:10px 20px;
