@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 .same:first-child{
-  background:gray;
+  background:#f2f2f2;
 }
 .product__media-wrapper .product-media-container{
   position:relative;
