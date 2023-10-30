@@ -170,6 +170,11 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
+            <div>
+              <div class="country_name"></div>
+            <div class="onlyPincode"></div>
+            <div class="col-5"><button>Available</button></div>
+            </div>
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
