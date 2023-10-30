@@ -7,8 +7,10 @@
 }
 
 .same input{
-  border:none;
-  outline:none;
+  border: none;
+    outline: none;
+    padding: 7px 5px;
+    margin-top: 4px
 }
 .same button{
   border: none;
