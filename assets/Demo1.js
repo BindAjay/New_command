@@ -20,6 +20,9 @@ add_pin.addEventListener('keyup',()=>{
          document.querySelector(".col-5").style.display="block";
          document.querySelector(".col-3").style.display="none";
       }
+      else{
+        document.querySelector(".col-2").style.display="block";
+      }
     }
   }
   else{
