@@ -19,8 +19,8 @@ add_pin.addEventListener('keyup',()=>{
     for( x of pin_value){
       // console.log(x);
       if(pin_text_val==x){
-        console.log("Yes");
-        document.querySelector(".col-5").style.display="block";
+         document.querySelector(".col-5").style.display="block";
+         document.querySelector(".col-3").style.display="none";
       }
     }
   }
