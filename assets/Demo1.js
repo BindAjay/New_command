@@ -6,9 +6,8 @@
 //     load_btn1.classList.remove("loding-show");
 //   });
 // });
-console.log("Pincode",pin);
 var pin_value = pin.split(",");
-console.log(pin_value);
+//console.log(pin_value);
 for( x of pin_value){
   console.log(x);
 }
