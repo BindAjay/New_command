@@ -171,12 +171,19 @@
                 </div>
               {%- endif -%}
             <div class="pin_box">
-              <div class="country_name same">INDIA</div>
-            <div class="onlyPincode same"><input type="text" id="pintxt"></div>
-            <div class="col-5 same"><button class="avl">Available</button></div>
-             <div class="col-3 same"><button class="che">Check</button></div>
-            <div class="col-2 same"><button class="err">Error</button></div>
+                 <div class="country_name same">INDIA</div>
+                <div class="onlyPincode same"><input type="text" id="pintxt"></div>
+                <div class="col-5 same"><button class="avl">Available</button></div>
+                <div class="col-3 same"><button class="che">Check</button></div>
+                <div class="col-2 same"><button class="err">Error</button></div>
             </div>
+            <div class="Select_date_main">
+                <div class="Select_data_text">
+                  <h2>Select Date</h2>
+                </div>
+                <div></div>
+            </div>
+              
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
