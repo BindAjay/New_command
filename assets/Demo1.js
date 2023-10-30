@@ -11,7 +11,8 @@
 //   });
 // });
 window.addEventListener("load", (event) => {
-  alert();
+   var pin = {{ pin_code }};
+console.log(pin);
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
     console.log("loader",load_btn1);
