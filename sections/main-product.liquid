@@ -286,7 +286,7 @@
                   {%- endif -%}
                 </div>
               </div>
-            <p class="pincode_val" style="display:none">{{ section.settings.pincode_box }}</p>
+           {%- assign pin_code = section.settings.pincode_vl -%}
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
