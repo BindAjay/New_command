@@ -7,6 +7,7 @@
 }
 .same input{
   border:none;
+  outline:none;
 }
 .product__media-wrapper .product-media-container{
   position:relative;
