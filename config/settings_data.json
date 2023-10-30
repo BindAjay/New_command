@@ -1,7 +1,7 @@
 {
   "current": {
     "logo_width": 90,
-    "pincode_n": "110047,110023,110011",
+    "pincode_vl": "110047 ,110023",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -117,6 +117,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "pincode_n": "110047,110023,110011",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
