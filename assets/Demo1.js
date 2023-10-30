@@ -8,9 +8,7 @@
 // });
 var pin_value = pin.split(",");
 //console.log(pin_value);
-for( x of pin_value){
-  console.log(x);
-}
+
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',()=>{
    add_pin.value = add_pin.value.toUpperCase();
@@ -18,8 +16,11 @@ add_pin.addEventListener('keyup',()=>{
   var LEN = add_pin.value.length;
   if(LEN==6){
     console.log(pin_text_val);
+    for( x of pin_value){
+      console.log(x);
+    }
   }
-  console.log(LEN);
+ // console.log(LEN);
 })
 window.addEventListener("load", (event) => {
   
