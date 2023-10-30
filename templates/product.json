@@ -53,13 +53,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "084d9b92-4aa7-4a60-bb14-aab8bde5daed": {
-          "type": "image",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/igp-loader-img-new.png",
-            "logo-text": ""
-          }
         }
       },
       "block_order": [
@@ -71,8 +64,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "084d9b92-4aa7-4a60-bb14-aab8bde5daed"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
