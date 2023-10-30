@@ -14,7 +14,11 @@ for( x of pin_value){
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',()=>{
    add_pin.value = add_pin.value.toUpperCase();
+  var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
+  if(LEN==6){
+    console.log(pin_text_val);
+  }
   console.log(LEN);
 })
 window.addEventListener("load", (event) => {
