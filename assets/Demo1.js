@@ -1,4 +1,4 @@
-var pin = document.querySelectorAll('.pincode_val');
+var pin = document.querySelector('.pincode_val');
 console.log(pin);
 pin.forEach((pin_v)=>{
   console.log(pin_v);
