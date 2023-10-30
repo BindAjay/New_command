@@ -1,7 +1,3 @@
-//  alert();
-
-
-
 
 // document.addEventListener("DOMContentLoaded", (event) => {
 // var loading1 = document.querySelectorAll('.placeholder-img');
