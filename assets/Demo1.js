@@ -9,7 +9,7 @@
 console.log("Pincode",pin);
 var pin_value = pin.split(",");
 console.log(pin_value);
-for( x in pin_value){
+for( x of pin_value){
   console.log(x);
 }
 window.addEventListener("load", (event) => {
