@@ -16,6 +16,8 @@
     font-size: 14px;
     font-weight: bold;
 }
+.same:first-child{
+  background:gray;
 }
 .product__media-wrapper .product-media-container{
   position:relative;
