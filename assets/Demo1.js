@@ -1,7 +1,6 @@
 // {%- assign pin_code = section.settings.pincode_n -%}
-alert();
-var pin = {{pin_code}};
-console.log(pin);
+
+
 
 
 // document.addEventListener("DOMContentLoaded", (event) => {
