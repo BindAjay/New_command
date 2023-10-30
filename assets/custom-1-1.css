@@ -3,6 +3,7 @@
   border:2px solid;
   padding: 5px;
     width: 80%;
+  gap:5px;
 }
 
 .product__media-wrapper .product-media-container{
