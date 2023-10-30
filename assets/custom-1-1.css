@@ -2,6 +2,9 @@
   display:flex;
   border:1px solid;
 }
+.same .span_date{
+  padding:10px 20px;
+}
 .pin_box{
   display:flex;
   border:2px solid;
