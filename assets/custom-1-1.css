@@ -1,5 +1,6 @@
 .Select_data_box{
   display:flex;
+  border:1px solid;
 }
 .pin_box{
   display:flex;
