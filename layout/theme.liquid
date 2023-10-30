@@ -267,8 +267,9 @@
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
    {% render 'View_popup' %}
-  {%- assign pin_text = settings.pincode_vl -%}
+  
   <script>
+    {%- assign pin_text = settings.pincode_vl -%}
    var pin = {{ pin_text }};
     alert(pin);
   </script>
