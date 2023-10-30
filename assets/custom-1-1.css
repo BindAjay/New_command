@@ -5,6 +5,9 @@
 .Select_data_box .same:first-child{
   padding:0px;
 }
+.Select_data_box .same{
+  text-align:center;
+}
 .same .span_date{
   padding:10px 20px;
 }
