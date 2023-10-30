@@ -38,7 +38,7 @@
     "settings": [
       {
         "type": "text",
-        "id": "pincode_n",
+        "id": "pincode_vl",
         "label": "Enter Pincode"
       }
     ]
