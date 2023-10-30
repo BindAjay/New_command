@@ -1,4 +1,4 @@
-{%- assign pin_code = section.settings.pincode_n -%}
+// {%- assign pin_code = section.settings.pincode_n -%}
 
 var pin = {{pin_code | json}};
 console.log(pin);
