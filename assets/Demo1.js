@@ -1,7 +1,7 @@
 // {%- assign pin_code = section.settings.pincode_n -%}
 
-// var pin = {{pincode_text | json}};
-// console.log(pin);
+var pin = {{pin_code}};
+console.log(pin);
 
 
 // document.addEventListener("DOMContentLoaded", (event) => {
