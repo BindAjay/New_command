@@ -20,6 +20,7 @@ add_pin.addEventListener('keyup',()=>{
       // console.log(x);
       if(pin_text_val==x){
         console.log("Yes");
+        document.querySelector(".col-5").style="block";
       }
     }
   }
