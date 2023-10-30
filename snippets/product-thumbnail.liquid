@@ -113,7 +113,9 @@
     {% if section.settings.image_html != blank %}
        <img src="{{section.settings.image_html | image_url:width:100}}" class="Logo_image_pdp">
     {% endif %}
+     {% if section.settings.image_html != blank %}
     <p class="Logo_image_pdp">{{ section.settings.logo_text }}</p>
+    {% endif %}
     <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
       <span class="visually-hidden">
         {{ 'products.product.media.open_media' | t: index: position }}
