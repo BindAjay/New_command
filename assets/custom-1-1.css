@@ -5,7 +5,9 @@
     width: 80%;
   gap:5px;
 }
-
+.same input{
+  border:none;
+}
 .product__media-wrapper .product-media-container{
   position:relative;
 }
