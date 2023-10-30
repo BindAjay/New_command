@@ -1,5 +1,6 @@
 .pin_box{
   display:flex;
+  border:2px solid;
 }
 
 .product__media-wrapper .product-media-container{
