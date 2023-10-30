@@ -69,7 +69,8 @@
       "settings": {
         "enable_sticky_info": true,
         "media_size": "small",
-        "logo_text": "Jarray",
+        "image_html": "shopify:\/\/shop_images\/igp-loader-img-new.png",
+        "logo_text": "",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "columns",
