@@ -9,7 +9,7 @@
 window.addEventListener("load", (event) => {
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
-    console.log("loader",load_btn1);
+   // console.log("loader",load_btn1);
     load_btn1.classList.remove("loding-show");
     setTimeout(function(){
       load_btn1.classList.add("loding-show");
