@@ -71,6 +71,7 @@
         "media_size": "small",
         "image_html": "shopify:\/\/shop_images\/igp-loader-img-new.png",
         "logo_text": "Jarry",
+        "pincode_box": "110047,110023,110011",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "columns",
