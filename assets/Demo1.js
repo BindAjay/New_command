@@ -23,7 +23,6 @@ add_pin.addEventListener('keyup',()=>{
     }
   }
   else{
-    console.log("Length --");
     document.querySelector(".col-5").style.display="none";
     document.querySelector(".col-3").style.display="block";
   }
