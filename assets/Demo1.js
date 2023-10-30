@@ -15,9 +15,7 @@ add_pin.addEventListener('keyup',()=>{
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
   if(LEN==6){
-    // console.log(pin_text_val);
     for( x of pin_value){
-      // console.log(x);
       if(pin_text_val==x){
          document.querySelector(".col-5").style.display="block";
          document.querySelector(".col-3").style.display="none";
@@ -29,7 +27,6 @@ add_pin.addEventListener('keyup',()=>{
     document.querySelector(".col-5").style.display="none";
     document.querySelector(".col-3").style.display="block";
   }
- // console.log(LEN);
 })
 window.addEventListener("load", (event) => {
   
