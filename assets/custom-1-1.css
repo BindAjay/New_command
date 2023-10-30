@@ -1,4 +1,6 @@
-.product-media-container
+.product__media-wrapper .product-media-container{
+  
+}
 .Second-button{
     width: 100%;
     font-size: 20px;
