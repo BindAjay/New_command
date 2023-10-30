@@ -6,8 +6,9 @@
 //     load_btn1.classList.remove("loding-show");
 //   });
 // });
+console.log("Pincode",pin);
 window.addEventListener("load", (event) => {
-  console.log("Pincode",pin);
+  
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
    // console.log("loader",load_btn1);
