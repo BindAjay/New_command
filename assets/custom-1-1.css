@@ -1,3 +1,6 @@
+.Select_date_main{
+  display:none;
+}
 .Select_data_box{
   display:flex;
   border:1px solid;
