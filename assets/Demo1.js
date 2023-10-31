@@ -10,10 +10,13 @@ var pin_value = pin.split(",");
 //console.log(pin_value);
 
 var add_pin = document.querySelector('#pintxt');
-add_pin.addEventListener('keyup',()=>{
-   add_pin.value = add_pin.value.toUpperCase();
+add_pin.addEventListener('keyup',(event)=>{
+   //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
+  if(isNaN(event.key) && event.key !== 'Backspace') {
+    event.preventDefault();
+  }
   if(LEN==6){
     for( x of pin_value){
       if(pin_text_val==x){
