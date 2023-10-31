@@ -14,7 +14,7 @@ add_pin.addEventListener('keyup',(event)=>{
    //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
-  console.log(pin_text_val);
+  console.log(add_pin);
   if(isNaN()) {
     event.preventDefault();
   }
