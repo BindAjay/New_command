@@ -14,7 +14,7 @@ add_pin.addEventListener('keyup',(event)=>{
    //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
-  console.log( add_pin.value);
+ 
 
   if(LEN==6){
     for( x of pin_value){
@@ -39,7 +39,7 @@ document.querySelector("#pintxt").addEventListener("keypress",function(event){
     var a=event;
   var len = a.length;
   var kpnum=/^[0-9]+$/;
-  if(!(a.key).match(kpnum)||len==6){
+  if(!(a.key).match(kpnum)){
      event.preventDefault(); 
   }  
 });
