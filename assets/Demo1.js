@@ -14,7 +14,8 @@ add_pin.addEventListener('keyup',(event)=>{
    //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
-  if(isNaN(event.key) && event.key !== 'Backspace') {
+  console.log(pin_text_val);
+  if(isNaN()) {
     event.preventDefault();
   }
   if(LEN==6){
