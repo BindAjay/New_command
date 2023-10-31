@@ -3,12 +3,14 @@
   border:1px solid;
 }
 .Select_data_box .same:first-child{
-  padding:0px;
+  /* padding:0px; */
   /* background:#fff; */
 }
+
 .Select_data_box .same{
   text-align:center;
   border-left: 1px solid;
+  padding:10px;
 }
 .same .span_date{
   padding:10px 20px;
