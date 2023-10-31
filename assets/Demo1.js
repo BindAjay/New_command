@@ -1,11 +1,11 @@
 
-document.addEventListener("DOMContentLoaded", (event) => {
-var loading1 = document.querySelectorAll('.placeholder-img');
-  loading1.forEach((load_btn1)=>{
-    console.log("loader",load_btn1);
-    load_btn1.classList.remove("loding-show");
-  });
-});
+// document.addEventListener("DOMContentLoaded", (event) => {
+// var loading1 = document.querySelectorAll('.placeholder-img');
+//   loading1.forEach((load_btn1)=>{
+//     console.log("loader",load_btn1);
+//     load_btn1.classList.remove("loding-show");
+//   });
+// });
 var pin_value = pin.split(",");
 //console.log(pin_value);
 
