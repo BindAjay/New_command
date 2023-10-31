@@ -10,12 +10,15 @@ var pin_value = pin.split(",");
 //console.log(pin_value);
 
 var add_pin = document.querySelector('#pintxt');
-add_pin.addEventListener('keyup',(event)=>{
+add_pin.addEventListener('keyup',(e)=>{
    //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
  
-
+if(LEN!=10){
+  event.preventDefault(); 
+      return false;
+}
   if(LEN==6){
     for( x of pin_value){
       if(pin_text_val==x){
