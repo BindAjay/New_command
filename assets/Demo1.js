@@ -15,16 +15,15 @@ add_pin.addEventListener('keyup',(e)=>{
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
  
-if(LEN!=10){
-  event.preventDefault(); 
-      return false;
-}
+
   if(LEN==6){
     for( x of pin_value){
       if(pin_text_val==x){
          document.querySelector(".col-5").style.display="block";
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".col-2").style.display="none";
+        e.preventDefault();
+        return flase;
       }
       else{
         document.querySelector(".col-2").style.display="block";
