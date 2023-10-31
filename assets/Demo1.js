@@ -15,11 +15,6 @@ add_pin.addEventListener('keyup',(event)=>{
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
   console.log( add_pin.value);
-   var a=event;
-  var kpnum=/^[0-9]+$/;
-  if(!(a.key).match(kpnum)){
-     event.preventDefault(); 
-  }  
 
   if(LEN==6){
     for( x of pin_value){
@@ -40,6 +35,13 @@ add_pin.addEventListener('keyup',(event)=>{
     document.querySelector(".col-2").style.display="none";
   }
 })
+document.querySelector("#pintxt").addEventListener("keypress",function(event){
+    var a=event;
+  var kpnum=/^[0-9]+$/;
+  if(!(a.key).match(kpnum)){
+     event.preventDefault(); 
+  }  
+});
 window.addEventListener("load", (event) => {
   
  var loading1 = document.querySelectorAll('.placeholder-img');
