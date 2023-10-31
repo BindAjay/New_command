@@ -15,7 +15,7 @@ add_pin.addEventListener('keyup',(event)=>{
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
   console.log( add_pin.value);
-  if(isNaN()) {
+  if(isNaN(add_pin.value)) {
     event.preventDefault();
   }
   if(LEN==6){
