@@ -38,7 +38,7 @@ add_pin.addEventListener('keyup',(event)=>{
 document.querySelector("#pintxt").addEventListener("keypress",function(event){
     var a=event;
   var kpnum=/^[0-9]+$/;
-  if(!(a.key).match(kpnum)||a.length==6){
+  if(!(a.key).match(kpnum)){
      event.preventDefault(); 
   }  
 });
