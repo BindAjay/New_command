@@ -22,12 +22,12 @@ add_pin.addEventListener('keyup',(e)=>{
          document.querySelector(".col-5").style.display="block";
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".col-2").style.display="none";
-        e.preventDefault();
-        return flase;
+        document.querySelector(".Select_date_main").style.display="block";
       }
       else{
         document.querySelector(".col-2").style.display="block";
          document.querySelector(".col-3").style.display="none";
+        document.querySelector(".Select_date_main").style.display="none";
       }
     }
   }
