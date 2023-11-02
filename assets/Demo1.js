@@ -10,6 +10,7 @@ var col_3 = document.querySelector(".col-3");
 var col_5 =  document.querySelector(".col-5");
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
+
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     dilv_box.forEach((dil_close)=>{
