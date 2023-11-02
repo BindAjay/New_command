@@ -2,7 +2,7 @@
 console.log("Delivery Type",del_typ);
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
-        var attrb = del_typ_btn.getAttribute(att);
+        var attrb = del_typ_btn.querySelector.getAttribute(att);
           console.log(attrb);
   })
 })
