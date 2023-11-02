@@ -1,3 +1,9 @@
+.time-box{
+  padding: 14px 16px !important;
+    height: 48px;
+    margin-top: 8px;
+    width: 33.3%;
+}
 .Delivery_type .deliv {
   display:flex;
 }
