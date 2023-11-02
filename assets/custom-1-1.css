@@ -49,8 +49,8 @@
 .Delivery_type{
   display:flex;
 }
-.Select_date_main{
-  /* display:none; */
+.All_info{
+  display:none;
 }
 .Select_data_box{
   display:flex;
