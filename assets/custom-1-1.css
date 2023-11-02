@@ -1,8 +1,7 @@
 .time-box{
-  padding: 14px 16px !important;
-    height: 48px;
-    margin-top: 8px;
-    width: 33.3%;
+ background-color: #f4f1fa;
+    border: 1px solid #6d4ebf;
+    color: #6d4ebf;
 }
 .Delivery_type .deliv {
   display:flex;
