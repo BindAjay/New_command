@@ -13,7 +13,7 @@ var dilv_box = document.querySelectorAll(".time-box");
 var vl;
  pri = document.querySelector('.price-item--sale').getAttribute("pratt");
   console.log("price",typeof(pri));
-  
+  pr_pri=parseInt(pri);
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     dilv_box.forEach((dil_close)=>{
@@ -23,7 +23,7 @@ del_typ.forEach((del_typ_btn) =>{
     console.log("value",typeof(vl));
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
-    total_price = pri + vl;
+    total_price = pr_pri + vl;
 alert(total_price);
   })
 })
