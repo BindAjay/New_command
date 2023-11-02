@@ -1,7 +1,7 @@
 .Delivery_type .deliv {
   display:flex;
 }
-.same.deliv {
+.deliv {
     display: flex;
     flex-direction: column;
     border: 1px solid;
