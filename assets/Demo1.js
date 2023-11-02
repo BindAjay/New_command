@@ -1,11 +1,11 @@
  var del_typ =  document.querySelectorAll(".deliv");
-console.log("Delivery Type",del_typ);
+  var dilv_box = document.querySelectorAll(".time-box");
+console.log(dilv_box);
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
+    
          var attrb = del_typ_btn.getAttribute("att");
-          console.log(attrb);
       document.querySelector(`.${attrb}`).style.display="block";
-          //attrb.style.display="block";
   })
 })
 
