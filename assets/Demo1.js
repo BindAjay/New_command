@@ -13,7 +13,7 @@ var dilv_box = document.querySelectorAll(".time-box");
 var vl;
  //pri = document.querySelector('.price-item--sale').getAttribute("pratt");
  pri = document.querySelector('.price-item--sale')
-  console.log("price",typeof(pri));
+  console.log("price",pri);
   pr_pri=parseInt(pri);
 console.log("price",typeof(pr_pri));
 del_typ.forEach((del_typ_btn) =>{
