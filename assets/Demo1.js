@@ -32,6 +32,7 @@ add_pin.addEventListener('keyup',(e)=>{
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".col-2").style.display="none";
         document.querySelector(".All_info").style.display="block";
+        document.querySelector(".Select_date_main").addClassList("add_cl")
       }
       else{
         document.querySelector(".col-2").style.display="block";
