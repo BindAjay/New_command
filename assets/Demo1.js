@@ -1,8 +1,8 @@
-setTimeout(function (){
+// setTimeout(function (){
  
   var del_typ =  document.querySelectorAll(".deliv");
 console.log("Delivery Type",del_typ);
-}, 1000);
+// }, 1000);
 
 // document.addEventListener("DOMContentLoaded", (event) => {
 // var loading1 = document.querySelectorAll('.placeholder-img');
