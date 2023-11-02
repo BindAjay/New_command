@@ -15,7 +15,7 @@ var vl;
 pri = document.querySelector('.price-item').getAttribute("prt");
   console.log("price",pri);
   pr_pri=parseInt(pri);
-console.log("price",typeof(pr_pri));
+console.log("price",typeof(pri));
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     dilv_box.forEach((dil_close)=>{
