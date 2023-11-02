@@ -35,9 +35,9 @@ add_pin.addEventListener('keyup',(e)=>{
         document.querySelector(".Delivery_main").style.display="none";
         //document.querySelector(".time-box").classList.add("add_cl")
        // document.getElementsByClassName("time-box").classList.add("add_cl");
-          //  dilv_box.forEach((dil_add)=>{
-          //   dil_add.style.display="none";
-          // })
+           dilv_box.forEach((dil_add)=>{
+            dil_add.style.display="none";
+          })
       }
       else{
         document.querySelector(".col-2").style.display="block";
