@@ -1,5 +1,10 @@
 var set_date = document.querySelectorAll(".st_date");
 console.log(set_date);
+set_date.forEach((set_date_all) =>{
+  set_date_all.addEventListener('click',()=>{
+    
+  })
+})
 
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
