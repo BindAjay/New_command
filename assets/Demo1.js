@@ -26,7 +26,7 @@ del_typ.forEach((del_typ_btn) =>{
       document.querySelector(`.${attrb}`).style.display="block";
     total_price = (pr_pri + vl);
     console.log(pr_pri);
-    alert(pr_pri,"",vl);
+    alert(pr_pri,"hellloooo",vl);
    // alert(vl)
 //alert(total_price);
   })
