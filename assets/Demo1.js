@@ -5,7 +5,7 @@ set_date.forEach((set_date_all) =>{
        document.querySelector('.Delivery_main').style.display="block";
   })
 })
-
+var col_5 =  document.querySelector(".col-5");
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
 del_typ.forEach((del_typ_btn) =>{
@@ -28,13 +28,11 @@ add_pin.addEventListener('keyup',(e)=>{
   if(LEN==6){
     for( x of pin_value){
       if(pin_text_val==x){
-         document.querySelector(".col-5").style.display="block";
+        col_5.style.display="block";
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".col-2").style.display="none";
         document.querySelector(".All_info").style.display="block";
         document.querySelector(".Delivery_main").style.display="none";
-        //document.querySelector(".time-box").classList.add("add_cl")
-       // document.getElementsByClassName("time-box").classList.add("add_cl");
            dilv_box.forEach((dil_add)=>{
             dil_add.style.display="none";
           })
@@ -44,20 +42,16 @@ add_pin.addEventListener('keyup',(e)=>{
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".All_info").style.display="none";
         document.querySelector(".Delivery_main").classList.remove("add_cl")
-       // document.querySelector(".Select_Time_box").classList.remove("add_cl")
-      // document.getElementsByClassName("time-box").classList.remove("add_cl");
 
       }
     }
   }
   else{
-    document.querySelector(".col-5").style.display="none";
+   col_5.style.display="none";
     document.querySelector(".col-3").style.display="block";
     document.querySelector(".col-2").style.display="none";
     document.querySelector(".All_info").style.display="none";
-    document.querySelector(".Delivery_main").classList.remove("add_cl")
-    //document.querySelector(".Select_Time_box").classList.remove("add_cl")
-     // document.getElementsByClassName("time-box").classList.remove("add_cl");
+    document.querySelector(".Delivery_main").classList.remove("add_cl");
   }
 })
 document.querySelector("#pintxt").addEventListener("keypress",function(event){
