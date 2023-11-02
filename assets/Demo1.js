@@ -1,3 +1,6 @@
+var set_date = document.querySelectorAll(".st_date");
+console.log(set_date);
+
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
 del_typ.forEach((del_typ_btn) =>{
