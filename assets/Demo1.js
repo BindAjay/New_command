@@ -34,7 +34,7 @@ add_pin.addEventListener('keyup',(e)=>{
         document.querySelector(".All_info").style.display="block";
         document.querySelector(".Delivery_main").classList.add("add_cl")
         //document.querySelector(".time-box").classList.add("add_cl")
-        document.getElementsByClassName("time-box").classList.add("add_cl");
+       // document.getElementsByClassName("time-box").classList.add("add_cl");
           //  dilv_box.forEach((dil_add)=>{
           //   dil_add.style.display="none";
           // })
@@ -45,7 +45,7 @@ add_pin.addEventListener('keyup',(e)=>{
         document.querySelector(".All_info").style.display="none";
         document.querySelector(".Delivery_main").classList.remove("add_cl")
        // document.querySelector(".Select_Time_box").classList.remove("add_cl")
-       document.getElementsByClassName("time-box").classList.remove("add_cl");
+      // document.getElementsByClassName("time-box").classList.remove("add_cl");
 
       }
     }
@@ -57,7 +57,7 @@ add_pin.addEventListener('keyup',(e)=>{
     document.querySelector(".All_info").style.display="none";
     document.querySelector(".Delivery_main").classList.remove("add_cl")
     //document.querySelector(".Select_Time_box").classList.remove("add_cl")
-     document.getElementsByClassName("time-box").classList.remove("add_cl");
+     // document.getElementsByClassName("time-box").classList.remove("add_cl");
   }
 })
 document.querySelector("#pintxt").addEventListener("keypress",function(event){
