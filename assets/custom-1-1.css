@@ -1,8 +1,13 @@
-.select_time{
- background-color: #f4f1fa;
+.fiexd_time{
+  background-color: #f4f1fa;
     border: 1px solid #6d4ebf;
     color: #6d4ebf;
 }
+/* .select_time{
+ background-color: #f4f1fa;
+    border: 1px solid #6d4ebf;
+    color: #6d4ebf;
+} */
 .Delivery_type .deliv {
   display:flex;
 }
