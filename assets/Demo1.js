@@ -2,7 +2,7 @@ var set_date = document.querySelectorAll(".st_date");
 console.log(set_date);
 set_date.forEach((set_date_all) =>{
   set_date_all.addEventListener('click',()=>{
-    
+       document.querySelector('..Delivery_main').style.display="block";
   })
 })
 
