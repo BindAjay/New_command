@@ -10,13 +10,13 @@ var col_3 = document.querySelector(".col-3");
 var col_5 =  document.querySelector(".col-5");
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
-
+var vl;
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     dilv_box.forEach((dil_close)=>{
       dil_close.style.display="none";
     })
-    var vl =del_typ_btn.getAttribute("value");
+     vl =del_typ_btn.getAttribute("value");
     console.log("value",vl);
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
