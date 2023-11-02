@@ -286,8 +286,7 @@ Adt_btn.addEventListener('click',()=>{
    var data = [];
    data.push({
     'id':id12,
-    'quantity':qut,
-     'price':pro
+    'quantity':qut
    });
    let formData = {
     'items':data,
