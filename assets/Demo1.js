@@ -19,7 +19,7 @@ del_typ.forEach((del_typ_btn) =>{
     dilv_box.forEach((dil_close)=>{
       dil_close.style.display="none";
     })
-     vl =del_typ_btn.getAttribute("value");
+     vl =parseInt(del_typ_btn.getAttribute("value"));
     console.log("value",typeof(vl));
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
