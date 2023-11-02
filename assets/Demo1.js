@@ -1,6 +1,6 @@
 setTimeout(function (){
  
-  var del_typ = document.querySlectorAll(".deliv");
+  var del_typ =  document.querySelectorAll(".deliv");
 console.log("Delivery Type",del_typ);
 }, 1000);
 
