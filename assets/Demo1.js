@@ -20,7 +20,7 @@ del_typ.forEach((del_typ_btn) =>{
       dil_close.style.display="none";
     })
      vl =del_typ_btn.getAttribute("value");
-    console.log("value",vl);
+    console.log("value",typeof(vl));
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
     total_price = pri + vl;
