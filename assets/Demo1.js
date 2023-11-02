@@ -1,18 +1,7 @@
-// setTimeout(function (){
- 
-  var del_typ =  document.querySelectorAll(".deliv");
+ var del_typ =  document.querySelectorAll(".deliv");
 console.log("Delivery Type",del_typ);
-// }, 1000);
 
-// document.addEventListener("DOMContentLoaded", (event) => {
-// var loading1 = document.querySelectorAll('.placeholder-img');
-//   loading1.forEach((load_btn1)=>{
-//     console.log("loader",load_btn1);
-//     load_btn1.classList.remove("loding-show");
-//   });
-// });
 var pin_value = pin.split(",");
-//console.log(pin_value);
 
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',(e)=>{
@@ -51,6 +40,10 @@ document.querySelector("#pintxt").addEventListener("keypress",function(event){
      event.preventDefault(); 
   }  
 });
+
+
+
+
 window.addEventListener("load", (event) => {
   
  var loading1 = document.querySelectorAll('.placeholder-img');
