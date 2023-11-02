@@ -1,3 +1,6 @@
+.Delivery_type .deliv {
+  display:flex;
+}
 .Delivery_type{
   display:flex;
 }
