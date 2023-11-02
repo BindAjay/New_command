@@ -8,6 +8,10 @@
     min-width: 200px;
     text-align: center;
 }
+.deliv-txt{
+  font-size: 13px;
+    text-align: center;
+}
 .same.deliv span:nth-child(2){
   color:red;
 }
