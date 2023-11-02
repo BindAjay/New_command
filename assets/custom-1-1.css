@@ -1,6 +1,10 @@
 .Delivery_type .deliv {
   display:flex;
 }
+.same.deliv {
+    display: flex;
+    flex-direction: column;
+}
 .Delivery_type{
   display:flex;
 }
