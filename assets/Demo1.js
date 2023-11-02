@@ -2,6 +2,9 @@ var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
+    dilv_box.forEach((dil_close)=>{
+      dil_close.style.display="none";
+    })
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
   })
@@ -10,7 +13,6 @@ del_typ.forEach((del_typ_btn) =>{
 var pin_value = pin.split(",");
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',(e)=>{
-   //add_pin.value = add_pin.value.toUpperCase();
   var pin_text_val = add_pin.value;
   var LEN = add_pin.value.length;
  
