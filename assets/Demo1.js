@@ -281,11 +281,13 @@ Adt_btn.addEventListener('click',()=>{
    qut = document.querySelector('.quantity__input').value;
   pri = document.querySelector('.price-item--sale').getAttribute("pratt");
   console.log("price",pri);
+  pro=pri+2;
   console.log(`id ${id12} Quntity ${qut}`)
    var data = [];
    data.push({
     'id':id12,
-    'quantity':qut
+    'quantity':qut,
+     'price':pro
    });
    let formData = {
     'items':data,
