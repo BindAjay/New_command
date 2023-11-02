@@ -4,6 +4,7 @@
 .same.deliv {
     display: flex;
     flex-direction: column;
+    border:1px solid;
 }
 .same.deliv span:nth-child(2){
   color:red;
