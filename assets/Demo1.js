@@ -43,8 +43,6 @@ add_pin.addEventListener('keyup',(e)=>{
         col_2.style.display="block";
          col_3.style.display="none";
         document.querySelector(".All_info").style.display="none";
-        //document.querySelector(".Delivery_main").classList.remove("add_cl")
-
       }
     }
   }
@@ -52,8 +50,7 @@ add_pin.addEventListener('keyup',(e)=>{
    col_5.style.display="none";
    col_3.style.display="block";
     col_2.style.display="none";
-    document.querySelector(".All_info").style.display="none";
-    //document.querySelector(".Delivery_main").classList.remove("add_cl");
+    document.querySelector(".All_info").style.display="none";   
   }
 })
 document.querySelector("#pintxt").addEventListener("keypress",function(event){
@@ -69,7 +66,6 @@ window.addEventListener("load", (event) => {
   
  var loading1 = document.querySelectorAll('.placeholder-img');
   loading1.forEach((load_btn1)=>{
-   // console.log("loader",load_btn1);
     load_btn1.classList.remove("loding-show");
     setTimeout(function(){
       load_btn1.classList.add("loding-show");
