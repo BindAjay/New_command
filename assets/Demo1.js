@@ -279,7 +279,7 @@ var Adt_btn = document.querySelector('.Second-button');
 Adt_btn.addEventListener('click',()=>{
    id12 = document.querySelector('.pd-id').getAttribute("id");
    qut = document.querySelector('.quantity__input').value;
-  pri = document.querySelector('.price-item--sale');
+  pri = document.querySelector('.price-item--sale').getAttribute("pratt");
   console.log("price",pri);
   console.log(`id ${id12} Quntity ${qut}`)
    var data = [];
