@@ -1,4 +1,5 @@
-
+var del_typ = document.querySlectorAll(".deliv");
+console.log("Delivery Type",del_typ);
 // document.addEventListener("DOMContentLoaded", (event) => {
 // var loading1 = document.querySelectorAll('.placeholder-img');
 //   loading1.forEach((load_btn1)=>{
