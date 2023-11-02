@@ -33,7 +33,7 @@ add_pin.addEventListener('keyup',(e)=>{
         document.querySelector(".col-2").style.display="none";
         document.querySelector(".All_info").style.display="block";
         document.querySelector(".Delivery_main").classList.add("add_cl")
-        //document.querySelector(".Select_Time_box").classList.add("add_cl")
+        //document.querySelector(".time-box").classList.add("add_cl")
       }
       else{
         document.querySelector(".col-2").style.display="block";
