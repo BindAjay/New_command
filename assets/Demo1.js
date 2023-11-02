@@ -1,9 +1,8 @@
  var del_typ =  document.querySelectorAll(".deliv");
 console.log("Delivery Type",del_typ);
 
-var pin_value = pin.split(",");
-//console.log(pin_value);
 
+var pin_value = pin.split(",");
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',(e)=>{
    //add_pin.value = add_pin.value.toUpperCase();
