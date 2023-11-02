@@ -1,6 +1,11 @@
  var del_typ =  document.querySelectorAll(".deliv");
 console.log("Delivery Type",del_typ);
-
+del_typ.forEach((del_typ_btn) =>{
+  del_typ_btn.addEventListener('click',()=>{
+        var attrb = del_typ_btn.getAttribute(att);
+          console.log(attrb);
+  })
+})
 
 var pin_value = pin.split(",");
 var add_pin = document.querySelector('#pintxt');
