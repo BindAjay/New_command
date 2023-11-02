@@ -11,6 +11,9 @@ var col_5 =  document.querySelector(".col-5");
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
 var vl;
+ pri = document.querySelector('.price-item--sale').getAttribute("pratt");
+  console.log("price",typeof(pri));
+  
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     dilv_box.forEach((dil_close)=>{
@@ -20,6 +23,8 @@ del_typ.forEach((del_typ_btn) =>{
     console.log("value",vl);
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
+    total_price = pri + vl;
+alert(total_price);
   })
 })
 
@@ -279,9 +284,7 @@ var Adt_btn = document.querySelector('.Second-button');
 Adt_btn.addEventListener('click',()=>{
    id12 = document.querySelector('.pd-id').getAttribute("id");
    qut = document.querySelector('.quantity__input').value;
-  pri = document.querySelector('.price-item--sale').getAttribute("pratt");
-  console.log("price",typeof(pri));
-  pro=pri+2;
+ 
   console.log(`id ${id12} Quntity ${qut}`)
    var data = [];
    data.push({
