@@ -40,7 +40,7 @@ add_pin.addEventListener('keyup',(e)=>{
           })
       }
       else{
-        document.querySelector(".col-2").style.display="block";
+        col_2.style.display="block";
          col_3.style.display="none";
         document.querySelector(".All_info").style.display="none";
         //document.querySelector(".Delivery_main").classList.remove("add_cl")
