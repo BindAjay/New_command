@@ -25,6 +25,7 @@ del_typ.forEach((del_typ_btn) =>{
        var attrb = del_typ_btn.getAttribute("att");
       document.querySelector(`.${attrb}`).style.display="block";
     total_price = (pr_pri + vl);
+    console.log(total_price);
 alert(total_price);
   })
 })
