@@ -2,6 +2,7 @@
 console.log("Delivery Type",del_typ);
 
 var pin_value = pin.split(",");
+//console.log(pin_value);
 
 var add_pin = document.querySelector('#pintxt');
 add_pin.addEventListener('keyup',(e)=>{
@@ -40,9 +41,6 @@ document.querySelector("#pintxt").addEventListener("keypress",function(event){
      event.preventDefault(); 
   }  
 });
-
-
-
 
 window.addEventListener("load", (event) => {
   
