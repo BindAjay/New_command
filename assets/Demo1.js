@@ -39,6 +39,8 @@ add_pin.addEventListener('keyup',(e)=>{
         document.querySelector(".col-2").style.display="block";
          document.querySelector(".col-3").style.display="none";
         document.querySelector(".All_info").style.display="none";
+        document.querySelector(".Delivery_main").classList.remove("add_cl")
+        document.querySelector(".Select_Time_box").classList.remove("add_cl")
       }
     }
   }
@@ -47,6 +49,8 @@ add_pin.addEventListener('keyup',(e)=>{
     document.querySelector(".col-3").style.display="block";
     document.querySelector(".col-2").style.display="none";
     document.querySelector(".All_info").style.display="none";
+    document.querySelector(".Delivery_main").classList.remove("add_cl")
+    document.querySelector(".Select_Time_box").classList.remove("add_cl")
   }
 })
 document.querySelector("#pintxt").addEventListener("keypress",function(event){
