@@ -1,6 +1,5 @@
- var del_typ =  document.querySelectorAll(".deliv");
-  var dilv_box = document.querySelectorAll(".time-box");
-console.log(dilv_box);
+var del_typ =  document.querySelectorAll(".deliv");
+var dilv_box = document.querySelectorAll(".time-box");
 del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
     
