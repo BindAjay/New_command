@@ -11,7 +11,8 @@ var col_5 =  document.querySelector(".col-5");
 var del_typ =  document.querySelectorAll(".deliv");
 var dilv_box = document.querySelectorAll(".time-box");
 var vl;
- pri = document.querySelector('.price-item--sale').getAttribute("pratt");
+ //pri = document.querySelector('.price-item--sale').getAttribute("pratt");
+ pri = document.querySelector('.price-item--sale')
   console.log("price",typeof(pri));
   pr_pri=parseInt(pri);
 console.log("price",typeof(pr_pri));
