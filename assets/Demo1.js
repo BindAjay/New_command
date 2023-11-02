@@ -4,6 +4,7 @@ del_typ.forEach((del_typ_btn) =>{
   del_typ_btn.addEventListener('click',()=>{
          var attrb = del_typ_btn.getAttribute("att");
           console.log(attrb);
+          attrb.style.display="block";
   })
 })
 
