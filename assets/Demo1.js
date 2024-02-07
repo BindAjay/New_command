@@ -318,7 +318,12 @@ Adt_btn.addEventListener('click',()=>{
   });
 })
 //Close Add To cart button
- 
+
+
+
+//customer Data 
+
+
 
 
 
