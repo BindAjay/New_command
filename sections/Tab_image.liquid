@@ -106,18 +106,13 @@
 
   logo_btn.forEach((img_btn) => {
     img_btn.addEventListener('click', function(index) {
-      co
-        .forEach((co_btn) => {
+      co.forEach((co_btn) => {
           co_btn.classList.remove("abc");
         })
-        text
-        .forEach((txt_btn) => {
+        text.forEach((txt_btn) => {
           txt_btn.style.display = "none";
         })
-        img_btn
-        .querySelector(".press_dots")
-        .classList
-        .add("abc");
+        img_btn.querySelector(".press_dots").classList.add("abc");
       var img_attr = img_btn.getAttribute("set");
       console.log(img_attr);
       document.querySelector('.' + img_attr).style.display = "block";
@@ -130,5 +125,17 @@
   window.addEventListener('DOMContentLoaded', function() {
     const img_btns = document.querySelectorAll(".logo-bar__item");
     img_btns[0].click();
+    img_btns[0].style.border="1px solid red";
   });
+
+  fetch('http://localhost:9000/get', {
+    method: "GET"
+}).then((response) => {
+    return response.json();
+}).then((response) => {
+    console.log('response', response);
+}).catch((error) => {
+    console.error('Error: ', error);
+});
+
 </script>
